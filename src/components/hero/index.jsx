@@ -5,7 +5,7 @@ import { ArrowDownTrayIcon } from '@heroicons/react/24/outline'
 export default function Home() {
     return (
         <div className="bg-gray-900 flex flex-wrap flex-grow flex-col items-center justify-between">
-            <div className="flex flex-col justify-center pt-8">
+            <div className="flex flex-col justify-center h-full">
                 <img className="mx-auto mt-6 h-64 w-64 rounded-full" src={Picture} alt="Profile Photo" />
                 <h3 className="flex mt-6 mb-3 text-5xl font-bold text-white justify-center">André Pacheco</h3>
                 <h3 className="flex mb-3 text-3xl font-medium text-white justify-center">Software Developer</h3>
@@ -16,17 +16,17 @@ export default function Home() {
                     <ArrowDownTrayIcon className="h-8 w-8 mr-2" />
                     Download CV
                 </button>
-                <div className="flex mt-4 justify-center space-x-3">
+                <div className="flex mt-4 justify-center space-x-3 pb-8">
                     <button
                         type="button"
-                        className="text-white bg-gray-700 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-2xl p-2.5 text-center inline-flex items-center mr-2"
+                        className="text-white bg-gray-700 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-2xl p-2.5 text-center inline-flex items-center mr-2"
                     >
                         <a href="https://github.com/AndreMP97/" target="_blank"><FaGithub /></a>
                         <span class="sr-only">Github</span>
                     </button>
                     <button
                         type="button"
-                        className="text-white bg-gray-700 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-2xl p-2.5 text-center inline-flex items-center mr-2"
+                        className="text-white bg-gray-700 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-2xl p-2.5 text-center inline-flex items-center mr-2"
                     >
                         <a href="https://linkedin.com/in/andrempacheco97/" target="_blank"><FaLinkedin /></a>
                         <span class="sr-only">LinkedIn</span>

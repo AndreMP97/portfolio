@@ -1,10 +1,10 @@
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../../assets/portfolio.svg'
 
 const navigation = [
-    { name: 'Home', href: '#', current: true },
-    { name: 'About', href: '#', current: false },
+    { name: 'Home', href: '#home', current: true },
+    { name: 'About', href: '#about', current: false },
     { name: 'Projects', href: '#', current: false },
 ]
 
@@ -14,7 +14,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
     return (
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className="bg-gray-800 sticky top-0">
             {({ open }) => (
                 <>
                     <div className="px-2.5 sm:px-4 py-2.5 sm:py-4 container mx-auto">
@@ -53,7 +53,7 @@ export default function Navbar() {
                                             key={item.name}
                                             href={item.href}
                                             className={classNames(
-                                                item.current ? 'bg-gray-900 text-white' : 'bg-gray-700 text-gray-300 hover:bg-gray-900 hover:text-white',
+                                                'bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white',
                                                 'px-3 py-2 rounded-md text-sm font-medium'
                                             )}
                                             aria-current={item.current ? 'page' : undefined}
