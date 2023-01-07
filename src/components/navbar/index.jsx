@@ -1,12 +1,12 @@
 import { Disclosure } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, HomeIcon, UserIcon, CubeIcon } from '@heroicons/react/24/outline'
 import Logo from '../../assets/portfolio.svg'
 import { Link } from "react-router-dom";
 
 const navigation = [
-    { name: 'Home', href: '/', current: true },
-    { name: 'About', href: '/about', current: false },
-    { name: 'Projects', href: '/projects', current: false },
+    { name: 'Home', href: '/', current: true, icon: <HomeIcon /> },
+    { name: 'About', href: '/about', current: false, icon: <UserIcon /> },
+    { name: 'Projects', href: '/projects', current: false, icon: <CubeIcon /> },
 ]
 
 function classNames(...classes) {
@@ -14,8 +14,8 @@ function classNames(...classes) {
 }
 
 function handleClick(item) {
-    for(let i = 0; i < navigation.length; i++) {
-        if(navigation[i].name === item.name) {
+    for (let i = 0; i < navigation.length; i++) {
+        if (navigation[i].name === item.name) {
             navigation[i].current = true;
         }
         else {
@@ -64,11 +64,14 @@ export default function Navbar() {
                                         <li key={item.name}
                                             className={classNames(
                                                 item.current ? 'bg-gray-900 text-white' :
-                                                'bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white',
+                                                    'bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white',
                                                 'px-3 py-2 rounded-md text-sm font-medium'
                                             )}
                                         >
-                                            <Link to={item.href} onClick={() => handleClick(item)}>{item.name}</Link>
+                                            <Link className="flex" to={item.href} onClick={() => handleClick(item)}>
+                                                <div className="w-5 h-6 mt-0.5 mr-1">{item.icon}</div>
+                                                {item.name}
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>
@@ -85,11 +88,14 @@ export default function Navbar() {
                                     as="li"
                                     className={classNames(
                                         item.current ? 'bg-gray-900 text-white' :
-                                        'bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white',
+                                            'bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white',
                                         'px-3 py-2 rounded-md text-sm font-medium'
                                     )}
                                 >
-                                    <Link to={item.href} onClick={() => handleClick(item)}>{item.name}</Link>
+                                    <Link className="flex" to={item.href} onClick={() => handleClick(item)}>
+                                        <div className="w-4 h-5 mt-0.5 mr-1">{item.icon}</div>
+                                        {item.name}
+                                    </Link>
                                 </Disclosure.Button>
                             ))}
                         </ul>

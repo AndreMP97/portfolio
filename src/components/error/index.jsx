@@ -3,7 +3,7 @@ import ErrorPage from "../../assets/error-page.svg";
 
 export default function Error() {
     const error = useRouteError();
-    console.error(error);
+    //console.error(error);
 
     return (
         <div className="bg-gray-900 flex flex-wrap flex-grow flex-col items-center justify-between">
