@@ -1,15 +1,27 @@
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Logo from '../../assets/portfolio.svg'
+import { Link } from "react-router-dom";
 
 const navigation = [
-    { name: 'Home', href: '#home', current: true },
-    { name: 'About', href: '#about', current: false },
-    { name: 'Projects', href: '#', current: false },
+    { name: 'Home', href: '/', current: true },
+    { name: 'About', href: '/about', current: false },
+    { name: 'Projects', href: '/projects', current: false },
 ]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
+}
+
+function handleClick(item) {
+    for(let i = 0; i < navigation.length; i++) {
+        if(navigation[i].name === item.name) {
+            navigation[i].current = true;
+        }
+        else {
+            navigation[i].current = false;
+        }
+    }
 }
 
 export default function Navbar() {
@@ -44,46 +56,43 @@ export default function Navbar() {
                                         alt="Logo"
                                     />
                                 </div>
-                                <span className="self-center text-xl font-semibold dark:text-white ml-2">Portfolio</span>
+                                <span className="self-center text-xl font-semibold text-white ml-2">Portfolio</span>
                             </div>
                             <div className="hidden sm:block">
-                                <div className="absolute inset-y-0 right-0 flex items-center space-x-4">
+                                <ul className="absolute inset-y-0 right-0 flex items-center space-x-4">
                                     {navigation.map((item) => (
-                                        <a
-                                            key={item.name}
-                                            href={item.href}
+                                        <li key={item.name}
                                             className={classNames(
+                                                item.current ? 'bg-gray-900 text-white' :
                                                 'bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white',
                                                 'px-3 py-2 rounded-md text-sm font-medium'
                                             )}
-                                            aria-current={item.current ? 'page' : undefined}
                                         >
-                                            {item.name}
-                                        </a>
+                                            <Link to={item.href} onClick={() => handleClick(item)}>{item.name}</Link>
+                                        </li>
                                     ))}
-                                </div>
+                                </ul>
                             </div>
                         </div>
                     </div>
 
                     {/*Mobile*/}
                     <Disclosure.Panel className="sm:hidden">
-                        <div className="space-y-1 px-2 pt-2 pb-3">
+                        <ul className="flex flex-col justify-center items-end space-y-1 px-2 pt-2 pb-3">
                             {navigation.map((item) => (
                                 <Disclosure.Button
                                     key={item.name}
-                                    as="a"
-                                    href={item.href}
+                                    as="li"
                                     className={classNames(
-                                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                                        'block px-3 py-2 rounded-md text-base font-medium'
+                                        item.current ? 'bg-gray-900 text-white' :
+                                        'bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white',
+                                        'px-3 py-2 rounded-md text-sm font-medium'
                                     )}
-                                    aria-current={item.current ? 'page' : undefined}
                                 >
-                                    {item.name}
+                                    <Link to={item.href} onClick={() => handleClick(item)}>{item.name}</Link>
                                 </Disclosure.Button>
                             ))}
-                        </div>
+                        </ul>
                     </Disclosure.Panel>
                 </>
             )}
