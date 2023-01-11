@@ -2,7 +2,7 @@ import Picture from "../../assets/foto.jpg"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { ArrowDownTrayIcon } from '@heroicons/react/24/outline'
 
-export default function Home() {
+export default function Hero() {
     return (
         <div className="bg-gray-900 flex flex-wrap flex-grow flex-col items-center justify-between">
             <div className="flex flex-col justify-center h-full">
