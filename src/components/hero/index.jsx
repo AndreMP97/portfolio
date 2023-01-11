@@ -11,7 +11,7 @@ export default function Hero() {
                 <h3 className='flex mb-3 text-3xl font-medium text-white justify-center'>Software Developer</h3>
                 <button
                     type='button'
-                    className='flex w-60 self-center justify-center items-center px-8 py-3 border border-transparent text-xl font-medium rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                    className='flex w-60 self-center justify-center items-center px-8 py-3 border border-transparent text-xl font-medium rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600'
                 >
                     <ArrowDownTrayIcon className='h-8 w-8 mr-2' />
                     Download CV
