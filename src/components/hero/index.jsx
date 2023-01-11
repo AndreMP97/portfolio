@@ -20,7 +20,7 @@ export default function Hero() {
                     <a href='https://github.com/AndreMP97/' target='_blank' rel='noreferrer'>
                         <button
                             type='button'
-                            className='text-white bg-gray-700 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-2xl p-2.5 text-center inline-flex items-center mr-2'
+                            className='text-white bg-gray-700 hover:bg-gray-600 font-medium rounded-full text-2xl p-2.5 text-center inline-flex items-center mr-2'
                         >
                             <FaGithub />
                             <span className='sr-only'>Github</span>
@@ -29,7 +29,7 @@ export default function Hero() {
                     <a href='https://linkedin.com/in/andrempacheco97/' target='_blank' rel='noreferrer'>
                         <button
                             type='button'
-                            className='text-white bg-gray-700 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-2xl p-2.5 text-center inline-flex items-center mr-2'
+                            className='text-white bg-gray-700 hover:bg-gray-600 font-medium rounded-full text-2xl p-2.5 text-center inline-flex items-center mr-2'
                         >
                             <FaLinkedin />
                             <span className='sr-only'>LinkedIn</span>
