@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Bars3Icon, XMarkIcon, HomeIcon, UserIcon, CubeIcon } from '@heroicons/react/24/outline';
-import Logo from '../../assets/portfolio.svg';
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Bars3Icon, XMarkIcon, HomeIcon, UserIcon, CubeIcon } from "@heroicons/react/24/outline";
+import Logo from "../../assets/portfolio.svg";
 
 const navigation = [
-    { name: 'Home', href: '/', current: true, icon: <HomeIcon className='block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5' /> },
-    { name: 'About', href: '/about', current: false, icon: <UserIcon className='block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5' /> },
-    { name: 'Projects', href: '/projects', current: false, icon: <CubeIcon className='block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5' /> },
+    { name: "Home", href: "/", current: true, icon: <HomeIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
+    { name: "About", href: "/about", current: false, icon: <UserIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
+    { name: "Projects", href: "/projects", current: false, icon: <CubeIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
 ]
 
 function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
+    return classes.filter(Boolean).join(" ")
 }
 
 function handleLocation(href) {
@@ -31,27 +31,27 @@ export default function Navbar() {
     const [nav, setNav] = useState(false);
 
     return (
-        <div className='flex justify-between items-center w-full h-20 px-4 bg-gray-800'>
-            <div className='flex ml-2'>
+        <div className="flex justify-between items-center w-full h-20 px-4 bg-gray-800">
+            <div className="flex ml-2">
                 <img
-                    className='h-8 w-auto'
+                    className="h-8 w-auto"
                     src={Logo}
-                    alt='Logo'
+                    alt="Logo"
                 />
-                <h1 className='self-center text-xl font-semibold text-white ml-2'>Portfolio</h1>
+                <h1 className="self-center text-xl font-semibold text-white ml-2">Portfolio</h1>
             </div>
 
             {/*Desktop*/}
-            <ul className='hidden md:flex space-x-4 mr-2'>
+            <ul className="hidden md:flex space-x-4 mr-2">
                 {navigation.map((item) => (
                     <li key={item.name}
                         className={classNames(
-                            item.current ? 'bg-gray-900 text-white' :
-                                'bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white',
-                            'px-4 py-2 rounded-md text-sm cursor-pointer capitalize font-medium'
+                            item.current ? "bg-gray-900 text-white" :
+                                "bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white",
+                            "px-4 py-2 rounded-md text-sm cursor-pointer capitalize font-medium"
                         )}
                     >
-                        <Link className='flex' to={item.href}>
+                        <Link className="flex" to={item.href}>
                             {item.icon}
                             {item.name}
                         </Link>
@@ -61,20 +61,20 @@ export default function Navbar() {
 
             {/* Mobile */}
 
-            <div className='md:hidden z-10' onClick={() => setNav(!nav)}>
-                {nav ? <XMarkIcon className='text-white block h-6 w-6' /> : <Bars3Icon className='text-white block h-6 w-6' />}
+            <div className="md:hidden z-10" onClick={() => setNav(!nav)}>
+                {nav ? <XMarkIcon className="text-white block h-6 w-6" /> : <Bars3Icon className="text-white block h-6 w-6" />}
             </div>
             {nav && (
-                <ul className='md:hidden absolute top-0 left-0 flex flex-col justify-center items-center w-full h-screen backdrop-blur-3xl space-y-4'>
+                <ul className="md:hidden absolute top-0 left-0 flex flex-col justify-center items-center w-full h-screen backdrop-blur-3xl space-y-4">
                     {navigation.map((item) => (
                         <li key={item.name}
                             className={classNames(
-                                item.current ? 'text-white' :
-                                    ' text-gray-300',
-                                'px-4 py-6 text-4xl capitalize font-medium'
+                                item.current ? "text-white" :
+                                    " text-gray-300",
+                                "px-4 py-6 text-4xl capitalize font-medium"
                             )}
                         >
-                            <Link className='flex' to={item.href}>
+                            <Link className="flex" to={item.href}>
                                 {item.icon}
                                 {item.name}
                             </Link>
