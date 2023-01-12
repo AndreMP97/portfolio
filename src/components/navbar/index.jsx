@@ -61,11 +61,11 @@ export default function Navbar() {
 
             {/* Mobile */}
 
-            <div className='sm:hidden z-10' onClick={() => setNav(!nav)}>
+            <div className='md:hidden z-10' onClick={() => setNav(!nav)}>
                 {nav ? <XMarkIcon className='text-white block h-6 w-6' /> : <Bars3Icon className='text-white block h-6 w-6' />}
             </div>
             {nav && (
-                <ul className='sm:hidden absolute top-0 left-0 flex flex-col justify-center items-center w-full h-screen backdrop-blur-3xl space-y-4'>
+                <ul className='md:hidden absolute top-0 left-0 flex flex-col justify-center items-center w-full h-screen backdrop-blur-3xl space-y-4'>
                     {navigation.map((item) => (
                         <li key={item.name}
                             className={classNames(

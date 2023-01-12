@@ -4,7 +4,7 @@ import { ArrowDownTrayIcon } from '@heroicons/react/24/outline'
 
 export default function Hero() {
     return (
-        <div className='bg-gray-900 flex flex-wrap flex-grow flex-col items-center justify-between'>
+        <div className='bg-gray-900 flex flex-grow flex-col items-center justify-between'>
             <div className='flex flex-col justify-center h-full'>
                 <img className='mx-auto mt-6 h-64 w-64 rounded-full' src={Picture} alt='Profile' />
                 <h3 className='flex mt-6 mb-3 text-5xl font-bold text-white justify-center'>André Pacheco</h3>
