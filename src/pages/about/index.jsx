@@ -3,7 +3,7 @@ import About from "../../components/about/index";
 
 export default function AboutPage() {
     return (
-        <div id="about" className="flex flex-col h-screen">
+        <div id="about" className="flex flex-col h-screen select-none">
             <Navbar />
             <About />
         </div>
