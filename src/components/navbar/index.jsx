@@ -31,7 +31,7 @@ export default function Navbar() {
     const [nav, setNav] = useState(false);
 
     return (
-        <div className="flex justify-between items-center w-full h-20 px-4 bg-gray-800">
+        <div className="flex shrink-0 justify-between items-center w-full h-20 px-4 bg-gray-800">
             <div className="flex ml-2">
                 <img
                     className="h-8 w-auto"
