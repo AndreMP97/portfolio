@@ -36,7 +36,7 @@ export default function AboutMe() {
             <div div className="flex h-5/6 justify-center snap-center overflow-y-scroll scrollbar-none md:overflow-hidden md:flex-col">
                 <div className="grid grid-cols-1 gap-2 md:gap-1 md:grid-cols-4 lg:gap-4 lg:grid-cols-6">
                     {icons.map((item) => (
-                        <div key={item.name} className="flex flex-col h-52 justify-center items-center  outline-2 outline-slate-900 hover:scale-110 duration-500 font-mono text-center text-white">
+                        <div key={item.name} className="flex flex-col h-52 justify-center items-center hover:scale-110 duration-500 font-mono text-center text-white">
                             <img className="w-32 md:w-24 rounded-md mx-auto" src={item.icon} alt="Profile" />
                             <p className="my-2 md:my-4">{item.name}</p>
                         </div>
