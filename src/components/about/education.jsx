@@ -4,7 +4,7 @@ export default function Education() {
     return (
         <div className="flex flex-col h-full min-w-full snap-center">
             <div className="flex flex-col h-1/6 justify-center items-center">
-                <h1 className="text-white text-3xl md:text-5xl md:py-6 md:pl-8 font-serif font-semibold">About Me</h1>
+                <h1 className="text-white text-3xl md:text-5xl md:py-6 md:pl-8 font-semibold">About Me</h1>
             </div>
             <div className="flex h-5/6">
                 <div className="hidden md:flex flex-col w-1/4 justify-start items-center m-2 space-y-2 text-white font-medium">
