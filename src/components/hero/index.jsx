@@ -12,10 +12,10 @@ export default function Hero() {
 
     return (
         <div className="bg-gray-900 flex flex-grow flex-col items-center justify-between">
-            <div className="flex flex-col justify-center h-full">
+            <div className="flex flex-col justify-center h-full w-5/6">
                 <img className="mx-auto mt-6 h-64 w-64 rounded-full" src={Picture} alt="Profile" />
-                <h1 className="flex mt-6 mb-3 text-5xl font-bold text-white justify-center">André Pacheco</h1>
-                <h2 className="flex h-9 mb-3 text-3xl font-mono text-white justify-center">{text}</h2>
+                <h1 className="flex mt-6 mb-3 text-4xl md:text-5xl font-bold text-white justify-center">André Pacheco</h1>
+                <h2 className="flex h-9 mb-3 text-2xl md:text-3xl font-mono text-white justify-center">{text}</h2>
                 <button
                     type="button"
                     className="flex animate-pulse w-60 self-center justify-center items-center px-8 py-3 border border-transparent text-xl font-medium rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600 hover:animate-none"
