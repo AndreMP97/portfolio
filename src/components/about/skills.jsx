@@ -33,7 +33,7 @@ export default function Skills() {
             <div className="flex flex-col h-1/6 justify-center items-center text-center">
                 <h1 className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:w-[600px] md:text-5xl md:py-6">My experience</h1>
             </div>
-            <div className="flex h-5/6 justify-center snap-center overflow-y-scroll scrollbar-none md:overflow-hidden md:flex-col">
+            <div className="flex h-5/6 justify-center overflow-y-scroll scrollbar-none md:overflow-hidden md:flex-col">
                 <div className="grid grid-cols-2 gap-2 md:grid-cols-4 lg:gap-4 lg:grid-cols-6">
                     {icons.map((item) => (
                         <div key={item.name} className="flex flex-col h-52 justify-center items-center font-mono text-center text-white hover:scale-110 duration-500">
