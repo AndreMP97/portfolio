@@ -27,48 +27,22 @@ export default function Navbar() {
     const [nav, setNav] = useState(false);
 
     return (
-        <div className="flex shrink-0 justify-between items-center w-full h-20 px-4 bg-gray-800">
-            <div className="flex ml-2">
-                <img
-                    className="h-8 w-auto"
-                    src={Logo}
-                    alt="Logo"
-                />
-                <h1 className="self-center text-xl font-semibold text-white ml-2">Portfolio</h1>
-            </div>
+        <div className="flex shrink-0 justify-center items-center w-full h-20 bg-gray-900">
+            <div className="flex w-5/6 justify-between">
+                <div className="flex">
+                    <img
+                        className="h-8 w-auto"
+                        src={Logo}
+                        alt="Logo"
+                    />
+                    <h1 className="self-center text-xl font-semibold text-white pl-2">Portfolio</h1>
+                </div>
 
-            {/*Desktop*/}
-            <ul className="hidden md:flex space-x-4 mr-2">
-                {navigation.map((item) => (
-                    <li key={item.name}
-                        className={classNames(
-                            item.current ? "bg-gray-900 text-white" :
-                                "bg-gray-700 text-gray-300 hover:bg-gray-600 hover:text-white",
-                            "px-4 py-2 rounded-md text-sm cursor-pointer capitalize font-medium"
-                        )}
-                    >
-                        <a href={item.href} className="flex">
-                            {item.icon}
-                            {item.name}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-
-            {/* Mobile */}
-
-            <div className="md:hidden z-10" onClick={() => setNav(!nav)}>
-                {nav ? <XMarkIcon className="text-white block h-6 w-6" /> : <Bars3Icon className="text-white block h-6 w-6" />}
-            </div>
-            {nav && (
-                <ul className="md:hidden absolute top-0 left-0 flex flex-col justify-center items-center w-full h-screen backdrop-blur-3xl space-y-4">
+                {/*Desktop*/}
+                <ul className="hidden md:flex items-center space-x-8">
                     {navigation.map((item) => (
                         <li key={item.name}
-                            className={classNames(
-                                item.current ? "text-white" :
-                                    " text-gray-300",
-                                "px-4 py-6 text-4xl capitalize font-medium"
-                            )}
+                            className="text-gray-300 hover:text-white text-sm cursor-pointer capitalize font-medium"
                         >
                             <a href={item.href} className="flex">
                                 {item.icon}
@@ -77,7 +51,30 @@ export default function Navbar() {
                         </li>
                     ))}
                 </ul>
-            )}
+
+                {/* Mobile */}
+                <div className="md:hidden z-10" onClick={() => setNav(!nav)}>
+                    {nav ? <XMarkIcon className="text-white block h-6 w-6" /> : <Bars3Icon className="text-white block h-6 w-6" />}
+                </div>
+                {nav && (
+                    <ul className="md:hidden absolute top-0 left-0 flex flex-col justify-center items-center w-full h-screen backdrop-blur-3xl space-y-4">
+                        {navigation.map((item) => (
+                            <li key={item.name}
+                                className={classNames(
+                                    item.current ? "text-white" :
+                                        " text-gray-300",
+                                    "px-4 py-6 text-4xl capitalize font-medium"
+                                )}
+                            >
+                                <a href={item.href} className="flex">
+                                    {item.icon}
+                                    {item.name}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                )}
+            </div>
         </div>
     )
 }
