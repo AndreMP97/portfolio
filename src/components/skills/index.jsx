@@ -30,7 +30,7 @@ export default function Skills() {
     return (
         <div className="flex flex-col h-full w-5/6">
             <div className="flex flex-col h-20 md:h-32 justify-end items-center md:items-start">
-                <h1 className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:text-5xl md:py-3">My experience</h1>
+                <h1 className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:text-5xl md:py-3">Experience</h1>
             </div>
             <div className="flex h-full justify-center pt-8 overflow-y-scroll md:justify-start md:overflow-hidden md:flex-col">
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-0 lg:grid-cols-6 lg:gap-4">
