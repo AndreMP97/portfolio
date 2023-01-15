@@ -19,10 +19,10 @@ function App() {
       <section id="skills" className="flex flex-grow h-screen select-none snap-center bg-gray-900 items-center justify-center">
         <Skills />
       </section>
-      <section id="projects" className="flex h-screen select-none snap-center">
+      <section id="projects" className="flex flex-grow h-screen select-none snap-center bg-gray-800 items-center justify-center">
         <Projects />
       </section>
-      <section id="contact" className="flex flex-col h-screen select-none snap-center">
+      <section id="contact" className="flex flex-col flex-grow h-screen select-none snap-center bg-gray-900 items-center justify-center">
         <Contact />
         <Footer />
       </section>
