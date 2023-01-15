@@ -8,11 +8,11 @@ const navigation = [
     { name: "Contact", href: "#contact", current: false, icon: <InboxIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
 ]
 
-function classNames(...classes) {
+/*function classNames(...classes) {
     return classes.filter(Boolean).join(" ")
 }
 
-/*function handleLocation(href) {
+function handleLocation(href) {
     for (let i = 0; i < navigation.length; i++) {
         if (navigation[i].href === href) {
             navigation[i].current = true;
