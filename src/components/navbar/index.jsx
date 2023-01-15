@@ -4,6 +4,7 @@ import Logo from "../../assets/portfolio.svg";
 
 const navigation = [
     { name: "About", href: "#about", current: false, icon: <UserIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
+    { name: "Experience", href: "#skills", current: false, icon: <CubeIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
     { name: "Projects", href: "#projects", current: false, icon: <CubeIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
     { name: "Contact", href: "#contact", current: false, icon: <InboxIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
 ]
