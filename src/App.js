@@ -1,18 +1,18 @@
 import Navbar from "./components/navbar/index";
-import Home from "./components/home/index";
+import Hero from "./components/hero/index";
 import About from "./components/about/index";
 
 function App() {
   return (
-    <>
-      <div id="home" className="flex flex-col h-screen">
+    <div className="h-screen overflow-y-scroll snap-y snap-mandatory scrollbar scrollbar-thumb-gray-600 scrollbar-track-gray-500">
+      <section id="home" className="flex flex-col h-screen select-none snap-start">
         <Navbar />
-        <Home />
-      </div>
-      <div id="about" className="flex flex-col h-screen">
+        <Hero />
+      </section>
+      <section id="about" className="flex flex-col h-screen select-none snap-center">
         <About />
-      </div>
-    </>
+      </section>
+    </div>
   );
 }
 

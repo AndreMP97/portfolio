@@ -1,19 +1,18 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
 import { Bars3Icon, XMarkIcon, HomeIcon, UserIcon, CubeIcon } from "@heroicons/react/24/outline";
 import Logo from "../../assets/portfolio.svg";
 
 const navigation = [
-    { name: "Home", href: "/", current: true, icon: <HomeIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
-    { name: "About", href: "/about", current: false, icon: <UserIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
-    { name: "Projects", href: "/projects", current: false, icon: <CubeIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
+    { name: "Home", href: "#home", current: false, icon: <HomeIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
+    { name: "About", href: "#about", current: false, icon: <UserIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
+    { name: "Projects", href: "#projects", current: false, icon: <CubeIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
 ]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ")
 }
 
-function handleLocation(href) {
+/*function handleLocation(href) {
     for (let i = 0; i < navigation.length; i++) {
         if (navigation[i].href === href) {
             navigation[i].current = true;
@@ -22,12 +21,9 @@ function handleLocation(href) {
             navigation[i].current = false;
         }
     }
-}
+}*/
 
 export default function Navbar() {
-    let location = useLocation();
-    handleLocation(location.pathname);
-
     const [nav, setNav] = useState(false);
 
     return (
@@ -51,10 +47,10 @@ export default function Navbar() {
                             "px-4 py-2 rounded-md text-sm cursor-pointer capitalize font-medium"
                         )}
                     >
-                        <Link className="flex" to={item.href}>
+                        <a href={item.href} className="flex">
                             {item.icon}
                             {item.name}
-                        </Link>
+                        </a>
                     </li>
                 ))}
             </ul>
@@ -74,10 +70,10 @@ export default function Navbar() {
                                 "px-4 py-6 text-4xl capitalize font-medium"
                             )}
                         >
-                            <Link className="flex" to={item.href}>
+                            <a href={item.href} className="flex">
                                 {item.icon}
                                 {item.name}
-                            </Link>
+                            </a>
                         </li>
                     ))}
                 </ul>
