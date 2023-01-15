@@ -43,7 +43,7 @@ export default function Navbar() {
                 <ul className="hidden md:flex items-center space-x-8">
                     {navigation.map((item) => (
                         <li key={item.name}
-                            className="text-white hover:text-gray-300 text-sm cursor-pointer capitalize font-medium"
+                            className="text-white hover:text-gray-300 hover:scale-110 duration-500 text-sm cursor-pointer capitalize font-medium"
                         >
                             <a href={item.href} className="flex">
                                 {item.icon}
