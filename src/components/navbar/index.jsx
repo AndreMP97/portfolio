@@ -42,7 +42,7 @@ export default function Navbar() {
                 <ul className="hidden md:flex items-center space-x-8">
                     {navigation.map((item) => (
                         <li key={item.name}
-                            className="text-gray-300 hover:text-white text-sm cursor-pointer capitalize font-medium"
+                            className="text-white hover:text-gray-300 text-sm cursor-pointer capitalize font-medium"
                         >
                             <a href={item.href} className="flex">
                                 {item.icon}
@@ -60,11 +60,7 @@ export default function Navbar() {
                     <ul className="md:hidden absolute top-0 left-0 flex flex-col justify-center items-center w-full h-screen backdrop-blur-3xl space-y-4">
                         {navigation.map((item) => (
                             <li key={item.name}
-                                className={classNames(
-                                    item.current ? "text-white" :
-                                        " text-gray-300",
-                                    "px-4 py-6 text-4xl capitalize font-medium"
-                                )}
+                                className= "text-white px-4 py-6 text-4xl capitalize font-medium"
                             >
                                 <a href={item.href} className="flex">
                                     {item.icon}
