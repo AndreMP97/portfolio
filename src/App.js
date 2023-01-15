@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar/";
 import Hero from "./components/hero/";
 import About from "./components/about/";
+import Skills from "./components/skills";
 import Projects from "./components/projects/";
 import Contact from "./components/contact/";
 import Footer from "./components/footer";
@@ -12,10 +13,13 @@ function App() {
         <Navbar />
         <Hero />
       </section>
-      <section id="about" className="flex flex-col h-screen select-none snap-center">
+      <section id="about" className="flex flex-grow h-screen select-none snap-center bg-gray-800 items-center justify-center">
         <About />
       </section>
-      <section id="projects" className="flex flex-col h-screen select-none snap-center">
+      <section id="skills" className="flex flex-grow h-screen select-none snap-center bg-gray-900 items-center justify-center">
+        <Skills />
+      </section>
+      <section id="projects" className="flex h-screen select-none snap-center">
         <Projects />
       </section>
       <section id="contact" className="flex flex-col h-screen select-none snap-center">

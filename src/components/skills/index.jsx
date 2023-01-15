@@ -6,7 +6,6 @@ import HTML from "../../assets/html-icon.png";
 import Java from "../../assets/java-icon.png";
 import JS from "../../assets/javascript-icon.png";
 import MySQL from "../../assets/mysql-icon.png";
-//import Node from "../../assets/node-js-icon.png";
 import PHP from "../../assets/php-icon.png";
 import Python from "../../assets/python-icon.png";
 import React from "../../assets/react-js-icon.png";
@@ -29,14 +28,14 @@ const icons = [
 
 export default function Skills() {
     return (
-        <div className="flex flex-col h-full min-w-full snap-center">
-            <div className="flex flex-col h-1/6 justify-center items-center text-center">
-                <h1 className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:w-[600px] md:text-5xl md:py-6">My experience</h1>
+        <div className="flex flex-col h-5/6 w-5/6 snap-center">
+            <div className="flex flex-col h-1/6 justify-center items-center md:items-start">
+                <h1 className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:text-5xl md:py-6">My experience</h1>
             </div>
-            <div className="flex h-5/6 justify-center overflow-y-scroll scrollbar-none md:overflow-hidden md:flex-col">
-                <div className="grid grid-cols-2 gap-2 md:grid-cols-4 lg:gap-4 lg:grid-cols-6">
+            <div className="flex h-5/6 justify-center md:portrait:justify-start overflow-y-scroll scrollbar-none md:overflow-hidden md:flex-col">
+                <div className="grid grid-cols-2 gap-2 md:grid-cols-4 lg:grid-cols-6 lg:gap-4">
                     {icons.map((item) => (
-                        <div key={item.name} className="flex flex-col h-52 justify-center items-center font-mono text-center text-white hover:scale-110 duration-500">
+                        <div key={item.name} className="flex flex-col h-48 lg:h-52 justify-center items-center font-mono text-center text-white hover:scale-110 duration-500">
                             <img className="w-24 lg:w-32 rounded-md mx-auto" src={item.icon} alt="Profile" />
                             <p className="my-2 md:my-4">{item.name}</p>
                         </div>
