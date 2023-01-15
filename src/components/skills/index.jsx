@@ -32,12 +32,12 @@ export default function Skills() {
             <div className="flex flex-col h-20 md:h-32 justify-end items-center md:items-start">
                 <h1 className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:text-5xl md:py-3">My experience</h1>
             </div>
-            <div className="flex h-full justify-center md:justify-start overflow-y-scroll md:overflow-hidden md:flex-col pt-8">
-                <div className="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-0 lg:grid-cols-6 lg:gap-4">
+            <div className="flex h-full justify-center pt-8 overflow-y-scroll md:justify-start md:overflow-hidden md:flex-col">
+                <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-0 lg:grid-cols-6 lg:gap-4">
                     {icons.map((item) => (
-                        <div key={item.name} className="flex flex-col h-48 lg:h-52 justify-center items-center font-mono text-center text-white hover:scale-110 duration-500">
-                            <img className="w-24 lg:w-32 rounded-md mx-auto" src={item.icon} alt="Profile" />
-                            <p className="my-2 md:my-4">{item.name}</p>
+                        <div key={item.name} className="flex flex-col h-48 lg:h-52 justify-between items-center font-mono text-white hover:scale-110 duration-500">
+                            <img className="w-24 lg:w-32 rounded-md m-auto" src={item.icon} alt="Profile" />
+                            <p>{item.name}</p>
                         </div>
                     ))}
                 </div>
