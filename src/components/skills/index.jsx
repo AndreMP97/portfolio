@@ -1,3 +1,4 @@
+import Sidenav from "../sidenav";
 import Bootstrap from "../../assets/bootstrap-icon.png";
 import Cpp from "../../assets/cpp-icon.png";
 import CSS from "../../assets/css-icon.png";
@@ -29,8 +30,15 @@ const icons = [
 export default function Skills() {
     return (
         <div className="flex flex-col h-full w-5/6">
-            <div className="flex flex-col h-20 md:h-32 justify-end items-center md:items-start">
-                <h1 className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:text-5xl md:py-3">Experience</h1>
+            <div className="flex w-full">
+                <div className="flex flex-col h-20 w-1/2 justify-end items-start md:h-32 md:w-4/6">
+                    <h1 className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:text-5xl md:py-3">Experience</h1>
+                </div>
+                <div className="flex justify-end items-end w-1/2 md:h-32 md:w-2/6">
+                    <Sidenav
+                    current={"Experience"} 
+                    />
+                </div>
             </div>
             <div className="flex h-full justify-center my-4 overflow-y-scroll scrollbar-none md:justify-start md:overflow-hidden md:flex-col">
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-0 lg:grid-cols-6 lg:gap-4">

@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import Sidenav from "../sidenav";
 
 export default function Contact() {
     const { register, formState: { errors }, handleSubmit, trigger } = useForm();
@@ -14,14 +15,21 @@ export default function Contact() {
 
     return (
         <div className="flex flex-col h-full w-5/6">
-            <div className="flex flex-col h-20 md:h-32 justify-end items-center md:items-start">
-                <h1 className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:text-5xl md:py-3">Contact me</h1>
+            <div className="flex w-full">
+                <div className="flex flex-col h-20 w-1/2 justify-end items-start md:h-32 md:w-4/6">
+                    <h1 className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:text-5xl md:py-3">Contact me</h1>
+                </div>
+                <div className="flex justify-end items-end w-1/2 md:h-32 md:w-2/6">
+                    <Sidenav
+                    current={"Contact"} 
+                    />
+                </div>
             </div>
             <div className="flex h-full mt-4 justify-center items-center text-white text-lg">
                 <div className="flex h-full w-4/5 lg:w-3/5">
                     <form
                         onSubmit={handleSubmit(onSubmit)}
-                        id = "contactForm"
+                        id="contactForm"
                         target="_blank"
                         action="https://formsubmit.co/c16896ae7ac26bc84e6819287adad09a"
                         method="POST"

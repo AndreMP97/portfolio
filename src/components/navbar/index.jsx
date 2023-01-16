@@ -3,10 +3,10 @@ import { Bars3Icon, XMarkIcon, UserIcon, BookOpenIcon, CubeIcon, InboxIcon } fro
 import Logo from "../../assets/portfolio.svg";
 
 const navigation = [
-    { name: "About", href: "#about", current: false, icon: <UserIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
-    { name: "Experience", href: "#skills", current: false, icon: <BookOpenIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
-    { name: "Projects", href: "#projects", current: false, icon: <CubeIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
-    { name: "Contact", href: "#contact", current: false, icon: <InboxIcon className="block h-10 w-10 mr-1 pt-0.5 md:h-5 md:w-5" /> },
+    { name: "About", href: "#about", current: false, icon: <UserIcon className="block h-10 w-10 mr-1 md:h-8 md:w-8" /> },
+    { name: "Experience", href: "#skills", current: false, icon: <BookOpenIcon className="block h-10 w-10 mr-1 md:h-8 md:w-8" /> },
+    { name: "Projects", href: "#projects", current: false, icon: <CubeIcon className="block h-10 w-10 mr-1 md:h-8 md:w-8" /> },
+    { name: "Contact", href: "#contact", current: false, icon: <InboxIcon className="block h-10 w-10 mr-1 md:h-8 md:w-8" /> },
 ]
 
 /*function classNames(...classes) {
@@ -40,12 +40,12 @@ export default function Navbar() {
                 </div>
 
                 {/*Desktop*/}
-                <ul className="hidden md:flex items-center space-x-8">
+                <ul className="hidden md:flex items-center space-x-6">
                     {navigation.map((item) => (
                         <li key={item.name}
-                            className="text-white hover:text-gray-300 hover:scale-110 duration-500 text-sm cursor-pointer capitalize font-medium"
+                            className="text-white hover:text-gray-300 hover:scale-110 duration-500 text-base cursor-pointer capitalize font-semibold"
                         >
-                            <a href={item.href} className="flex">
+                            <a href={item.href} className="flex items-center">
                                 {item.icon}
                                 {item.name}
                             </a>

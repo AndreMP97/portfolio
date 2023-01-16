@@ -29,7 +29,7 @@ export default function Hero() {
                             type="button"
                             className="text-white bg-gray-700 font-medium rounded-full text-2xl p-2.5 text-center inline-flex items-center mr-2 hover:bg-gray-600"
                         >
-                            <FaGithub />
+                            <FaGithub size={32} />
                             <span className="sr-only">Github</span>
                         </button>
                     </a>
@@ -38,7 +38,7 @@ export default function Hero() {
                             type="button"
                             className="text-white bg-gray-700 font-medium rounded-full text-2xl p-2.5 text-center inline-flex items-center mr-2 hover:bg-gray-600"
                         >
-                            <FaLinkedin />
+                            <FaLinkedin size={32} />
                             <span className="sr-only">LinkedIn</span>
                         </button>
                     </a>
