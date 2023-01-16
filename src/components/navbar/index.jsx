@@ -28,7 +28,7 @@ export default function Navbar() {
     const [nav, setNav] = useState(false);
 
     return (
-        <nav className="flex shrink-0 justify-center items-center w-full h-20 bg-gray-900">
+        <nav className="flex shrink-0 justify-center items-center w-full h-20 top-0 bg-gray-900 z-40">
             <div className="flex w-5/6 justify-between">
                 <div className="flex">
                     <img
@@ -54,7 +54,7 @@ export default function Navbar() {
                 </ul>
 
                 {/* Mobile */}
-                <div className="md:hidden z-10" onClick={() => setNav(!nav)}>
+                <div className="md:hidden z-40" onClick={() => setNav(!nav)}>
                     {nav ? <XMarkIcon className="text-white block h-6 w-6" /> : <Bars3Icon className="text-white block h-6 w-6" />}
                 </div>
                 {nav && (
@@ -63,7 +63,7 @@ export default function Navbar() {
                             <li key={item.name}
                                 className= "text-white px-4 py-6 text-4xl capitalize font-medium"
                             >
-                                <a href={item.href} className="flex">
+                                <a href={item.href} onClick={() => setNav(!nav)} className="flex">
                                     {item.icon}
                                     {item.name}
                                 </a>
