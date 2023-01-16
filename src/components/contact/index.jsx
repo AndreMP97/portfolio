@@ -48,10 +48,10 @@ export default function Contact() {
                         <textarea {...register("message", { required: true })}
                             aria-invalid={errors.message ? "true" : "false"}
                             placeholder="Your message"
-                            className="resize-none h-1/2 w-full text-white border-b-2 bg-gray-900 focus:outline-none" />
+                            className="resize-none h-full w-full text-white border-b-2 bg-gray-900 focus:outline-none" />
                         {errors.message?.type === "required" && <small className="text-red-600">Message is required</small>}
 
-                        <button type="submit" className="h-10 w-full bg-gray-800 text-white text-bold rounded-md hover:bg-gray-600">Submit</button>
+                        <button type="submit" className="h-16 w-full bg-gray-800 text-white text-bold rounded-md hover:bg-gray-600">Submit</button>
                     </form>
                 </div>
             </div>
