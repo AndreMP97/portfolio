@@ -2,7 +2,7 @@ import { FaRegCopyright } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <div className="flex shrink-0 justify-center items-center w-full h-24 md:h-32 bg-inherit">
+        <footer className="flex shrink-0 justify-center items-center w-full h-24 md:h-32 bg-inherit">
             <div className="flex w-5/6 justify-between">
                 <div className="flex">
                     <FaRegCopyright className="h-6 w-auto text-white" />
@@ -15,6 +15,6 @@ export default function Footer() {
                 </div>
 
             </div>
-        </div>
+        </footer>
     )
 }

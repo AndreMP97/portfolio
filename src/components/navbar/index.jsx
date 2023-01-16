@@ -28,7 +28,7 @@ export default function Navbar() {
     const [nav, setNav] = useState(false);
 
     return (
-        <div className="flex shrink-0 justify-center items-center w-full h-20 bg-gray-900">
+        <navbar className="flex shrink-0 justify-center items-center w-full h-20 bg-gray-900">
             <div className="flex w-5/6 justify-between">
                 <div className="flex">
                     <img
@@ -72,6 +72,6 @@ export default function Navbar() {
                     </ul>
                 )}
             </div>
-        </div>
+        </navbar>
     )
 }
