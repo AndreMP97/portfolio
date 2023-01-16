@@ -17,7 +17,7 @@ export default function Contact() {
             <div className="flex flex-col h-20 md:h-32 justify-end items-center md:items-start">
                 <h1 className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:text-5xl md:py-3">Contact me</h1>
             </div>
-            <div className="flex h-full pt-8 justify-center items-center text-white text-lg">
+            <div className="flex h-full mt-4 justify-center items-center text-white text-lg">
                 <div className="flex h-full w-4/5 lg:w-3/5">
                     <form
                         onSubmit={handleSubmit(onSubmit)}
