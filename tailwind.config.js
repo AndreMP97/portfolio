@@ -4,7 +4,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      display: ["Great Vibes", "cursive"],
+    },
+    extend: {}
   },
   plugins: [
     require('tailwind-scrollbar')
