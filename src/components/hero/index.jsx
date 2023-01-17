@@ -1,49 +1,66 @@
 import Picture from "../../assets/foto.jpg";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
+import { FaRegEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { useTypewriter } from 'react-simple-typewriter';
 
 export default function Hero() {
     const [text] = useTypewriter({
-        words: ["Software Developer"],
+        words: ["I'm a Software Developer"],
         loop: true,
         delaySpeed: 2500
     });
 
     return (
-        <div className="bg-gray-900 flex flex-grow flex-col items-center justify-between">
-            <div className="flex flex-col justify-center h-full w-5/6">
-                <img className="flex mx-auto mt-6 h-64 w-64 rounded-full" src={Picture} alt="Profile" />
-                <h1 className="flex mt-6 mb-3 text-4xl md:text-5xl font-bold text-white justify-center">André Pacheco</h1>
-                <h2 className="flex h-9 mb-3 text-2xl md:text-3xl font-mono text-white justify-center">{text}</h2>
-                <button
-                    type="button"
-                    className="flex animate-pulse w-56 md:w-60 self-center justify-center items-center px-8 py-3 border border-transparent text-lg md:text-xl font-medium rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600 hover:animate-none"
-                >
-                    <ArrowDownTrayIcon className="h-8 w-8 mr-2" />
-                    Download CV
-                </button>
-                <div className="flex mt-4 justify-center space-x-3 pb-8"> 
-                    <a href="https://github.com/AndreMP97/" target="_blank" rel="noreferrer">
-                        <button
-                            type="button"
-                            className="text-white bg-gray-700 font-medium rounded-full text-2xl p-2.5 text-center inline-flex items-center mr-2 hover:bg-gray-600"
-                        >
-                            <FaGithub size={32} />
-                            <span className="sr-only">Github</span>
-                        </button>
-                    </a>
-                    <a href="https://linkedin.com/in/andrempacheco97/" target="_blank" rel="noreferrer">
-                        <button
-                            type="button"
-                            className="text-white bg-gray-700 font-medium rounded-full text-2xl p-2.5 text-center inline-flex items-center mr-2 hover:bg-gray-600"
-                        >
-                            <FaLinkedin size={32} />
-                            <span className="sr-only">LinkedIn</span>
-                        </button>
-                    </a>
+        <div className="flex flex-col lg:flex-row h-full w-5/6 mx-auto justify-center items-center">
+            <div className="flex lg:h-full lg:w-2/3 order-2 lg:order-1 select-text">
+                <div className="flex flex-col justify-start lg:justify-center items-start space-y-4">
+                    <h2 className="text-xl md:text-3xl xl:text-4xl text-white">Hello,</h2>
+                    <h1 className="text-2xl md:text-4xl xl:text-5xl text-white">My name is André Pacheco</h1>
+                    <h3 className="h-5 text-lg md:h-6 xl:h-9 md:text-2xl xl:text-3xl text-white">{text}</h3>
+                    <div className="lg:w-5/6 space-y-1 text-base md:text-base xl:text-lg text-white text-justify">
+                        <p>Passionate about web development and dedicated to create high-quality, dynamic, and interactive websites.
+                            Constantly learning new technologies to both improve my skills and stay current with the industry.
+                            Always looking for new challenges to grow as a developer.</p>
+                    </div>
+                    <div className="inline-flex space-x-4 w-full justify-center md:justify-start">
+                        <a href="mailto:andre.m.pacheco.97@gmail.com" target="_blank" rel="noreferrer">
+                            <button
+                                type="button"
+                                className="text-white border border-transparent"
+                            >
+                                <FaRegEnvelope size={32} />
+                                <span className="sr-only">Email</span>
+                            </button>
+                        </a>
+                        <a href="https://github.com/AndreMP97/" target="_blank" rel="noreferrer">
+                            <button
+                                type="button"
+                                className="text-white border border-transparent"
+                            >
+                                <FaGithub size={32} />
+                                <span className="sr-only">Github</span>
+                            </button>
+                        </a>
+                        <a href="https://linkedin.com/in/andrempacheco97/" target="_blank" rel="noreferrer">
+                            <button
+                                type="button"
+                                className="text-white border border-transparent"
+                            >
+                                <FaLinkedin size={32} />
+                                <span className="sr-only">LinkedIn</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div className="flex flex-col lg:h-full lg:w-1/3 justify-center items-center order-1 lg:order-2">
+                <div className="flex relative justify-center items-center">
+                    <div className="absolute border border-gray-400 lg:h-48 lg:w-48 xl:h-64 xl:w-64 rounded-full animate-ping" />
+                    <div className="absolute border border-gray-700 lg:h-60 lg:w-60 xl:h-72 xl:w-72 rounded-full" />
+                    <div className="absolute border border-gray-600 lg:h-64 lg:w-64 xl:h-80 xl:w-80 rounded-full animate-pulse" />
+                    <div className="absolute border border-gray-500 h-48 w-48 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-96 xl:w-96 rounded-full animate-pulse" />
+                    <img className="h-48 w-48 md:h-64 md:w-64 lg:h-60 lg:w-60 xl:h-72 xl:w-72 rounded-full" src={Picture} alt="Profile" />
+                </div>
+            </div>
+        </div >
     )
 }
