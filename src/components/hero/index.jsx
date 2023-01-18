@@ -16,8 +16,8 @@ export default function Hero() {
                     <h2 className="text-xl md:text-3xl xl:text-4xl text-white">Hello,</h2>
                     <h1 className="text-2xl md:text-4xl xl:text-5xl text-white">My name is André Pacheco</h1>
                     <h3 className="h-5 text-lg md:h-6 xl:h-9 md:text-2xl xl:text-3xl text-white">{text}</h3>
-                    <div className="lg:w-5/6 space-y-1 text-base md:text-base xl:text-lg text-white text-justify">
-                        <p>Passionate about web development and dedicated to create high-quality, dynamic, and interactive websites.
+                    <div className="lg:w-5/6 space-y-1">
+                        <p className="text-base md:text-base xl:text-lg text-white text-justify">Passionate about web development and dedicated to create high-quality, dynamic, and interactive websites.
                             Constantly learning new technologies to both improve my skills and stay current with the industry.
                             Always looking for new challenges to grow as a developer.</p>
                     </div>
