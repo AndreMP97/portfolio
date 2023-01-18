@@ -34,14 +34,14 @@ export default function Navbar() {
                 </div>
 
                 {/*Desktop*/}
-                <ul className="hidden md:flex justify-center items-center space-x-6 w-full">
+                <ul className="hidden md:flex justify-center items-center space-x-6 bg-gray-700 border border-gray-600 rounded-full px-4 py-2">
                     {navigation.map((item) => (
                         <li key={item.name}
                             className={
                                 item.current ?
-                                    "text-white border-b-2 py-1 hover:text-gray-300 hover:scale-110 duration-500 text-xs lg:text-sm cursor-pointer capitalize font-semibold"
+                                    "text-white hover:text-gray-400 border-b-2 hover:border-gray-400 py-1 text-xs lg:text-sm cursor-pointer capitalize font-semibold"
                                     :
-                                    "text-white hover:text-gray-300 hover:scale-110 duration-500 text-xs lg:text-sm cursor-pointer capitalize font-semibold"
+                                    "text-white hover:text-gray-400 text-xs lg:text-sm cursor-pointer capitalize font-semibold"
                             }
                         >
                             <a href={item.href} className="flex items-center">
@@ -52,10 +52,10 @@ export default function Navbar() {
                     ))}
                 </ul>
 
-                <div className="flex">
+                <div className="hidden md:flex">
                     <button
                         type="button"
-                        className="inline-flex px-4 justify-center items-center border border-transparent text-xs lg:text-sm font-medium rounded-md shadow-sm text-white bg-gray-700 hover:bg-gray-600 hover:animate-none"
+                        className="inline-flex px-4 justify-center items-center text-xs lg:text-sm font-medium rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600 border border-gray-600 hover:border-gray-500"
                     >
                         Resume
                     </button>
@@ -77,6 +77,12 @@ export default function Navbar() {
                                 </a>
                             </li>
                         ))}
+                        <button
+                            type="button"
+                            className="text-white px-4 py-6 text-2xl capitalize font-medium bg-gray-900 rounded-md"
+                        >
+                            Resume
+                        </button>
                     </ul>
                 )}
             </div>

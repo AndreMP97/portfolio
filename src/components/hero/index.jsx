@@ -1,5 +1,5 @@
 import Picture from "../../assets/foto.jpg";
-import { FaRegEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useTypewriter } from 'react-simple-typewriter';
 
 export default function Hero() {
@@ -21,32 +21,32 @@ export default function Hero() {
                             Constantly learning new technologies to both improve my skills and stay current with the industry.
                             Always looking for new challenges to grow as a developer.</p>
                     </div>
-                    <div className="inline-flex space-x-4 w-full justify-center md:justify-start">
+                    <div className="inline-flex space-x-4 w-full justify-center items-center md:justify-start">
                         <a href="mailto:andre.m.pacheco.97@gmail.com" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
-                                className="text-white border border-transparent"
+                                className="text-inherit bg-white hover:text-white hover:bg-gray-500 border border-transparent rounded-md px-4 py-2 font-semibold animate-pulse"
                             >
-                                <FaRegEnvelope size={32} />
-                                <span className="sr-only">Email</span>
-                            </button>
-                        </a>
-                        <a href="https://github.com/AndreMP97/" target="_blank" rel="noreferrer">
-                            <button
-                                type="button"
-                                className="text-white border border-transparent"
-                            >
-                                <FaGithub size={32} />
-                                <span className="sr-only">Github</span>
+                                Hire me
+                                <span className="sr-only">Hire me</span>
                             </button>
                         </a>
                         <a href="https://linkedin.com/in/andrempacheco97/" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
-                                className="text-white border border-transparent"
+                                className="text-white hover:text-gray-500 border border-transparent py-2"
                             >
                                 <FaLinkedin size={32} />
                                 <span className="sr-only">LinkedIn</span>
+                            </button>
+                        </a>
+                        <a href="https://github.com/AndreMP97/" target="_blank" rel="noreferrer">
+                            <button
+                                type="button"
+                                className="text-white hover:text-gray-500 border border-transparent py-2"
+                            >
+                                <FaGithub size={32} />
+                                <span className="sr-only">Github</span>
                             </button>
                         </a>
                     </div>
