@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Bars3Icon, XMarkIcon, UserIcon, HomeIcon, CubeIcon, InboxIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon, UserIcon, HomeIcon, CubeIcon, InboxIcon, ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
     { name: "Home", href: "#home", current: true, icon: <HomeIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
@@ -34,7 +34,7 @@ export default function Navbar() {
                 </div>
 
                 {/*Desktop*/}
-                <ul className="hidden md:flex justify-center items-center space-x-6 bg-gray-700 border border-gray-600 rounded-full px-4 py-2">
+                <ul className="hidden md:inline-flex justify-center items-center md:space-x-4 lg:space-x-6 bg-gray-700 border border-gray-600 rounded-full px-4 py-2">
                     {navigation.map((item) => (
                         <li key={item.name}
                             className={
@@ -57,6 +57,7 @@ export default function Navbar() {
                         type="button"
                         className="inline-flex px-4 justify-center items-center text-xs lg:text-sm font-medium rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600 border border-gray-600 hover:border-gray-500"
                     >
+                        <ArrowDownTrayIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" />
                         Resume
                     </button>
                 </div>
@@ -79,8 +80,9 @@ export default function Navbar() {
                         ))}
                         <button
                             type="button"
-                            className="text-white px-4 py-6 text-2xl capitalize font-medium bg-gray-900 rounded-md"
+                            className="inline-flex text-white px-4 py-6 text-2xl capitalize font-medium bg-gray-900 rounded-md"
                         >
+                            <ArrowDownTrayIcon className="block h-10 w-10 mr-1" />
                             Resume
                         </button>
                     </ul>
