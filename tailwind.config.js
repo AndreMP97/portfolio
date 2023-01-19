@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      display: ["Great Vibes", "cursive"],
+      "display": ["Great Vibes", "cursive"],
     },
     extend: {}
   },

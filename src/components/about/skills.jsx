@@ -32,7 +32,7 @@ export default function Skills() {
             {icons.map((item) => (
                 <div key={item.name} className="flex flex-col justify-between items-center hover:scale-110 duration-500">
                     <img className="w-16 rounded-md m-auto" src={item.icon} alt="Profile" />
-                    <p className="font-mono text-white">{item.name}</p>
+                    <p className="font-light text-white">{item.name}</p>
                 </div>
             ))}
         </div>
