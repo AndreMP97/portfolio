@@ -20,10 +20,12 @@ function App() {
       <section id="projects" className="container flex h-screen mx-auto snap-start bg-gray-800 select-none items-center">
         <Projects />
       </section>
-      <section id="contact" className="container flex flex-col h-screen mx-auto snap-start bg-gray-800 select-none items-center">
+      <section id="contact" className="container flex h-screen mx-auto snap-start bg-gray-800 select-none items-center">
         <Contact />
-        <Footer />
       </section>
+      <footer className="container flex mx-auto z-40 justify-center items-center h-0">
+        <Footer />
+      </footer>
     </div>
   );
 }

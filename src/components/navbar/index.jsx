@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Bars3Icon, XMarkIcon, UserIcon, HomeIcon, CubeIcon, InboxIcon, ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-    { name: "Home", href: "#home", current: true, icon: <HomeIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
+    { name: "Home", href: "#home", current: false, icon: <HomeIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
     { name: "About", href: "#about", current: false, icon: <UserIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
     { name: "Projects", href: "#projects", current: false, icon: <CubeIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
     { name: "Contact", href: "#contact", current: false, icon: <InboxIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
@@ -27,7 +27,7 @@ export default function Navbar() {
     const [nav, setNav] = useState(false);
 
     return (
-        <div className="flex w-5/6 justify-between pt-20">
+        <div className="flex w-5/6 justify-between mt-20">
             <div className="flex">
                 <h1 className="self-center text-3xl font-display text-white -rotate-12">AP</h1>
             </div>
