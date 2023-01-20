@@ -12,7 +12,7 @@ export default function Hero() {
     return (
         <div className="flex flex-col lg:flex-row h-5/6 w-5/6 mx-auto justify-center">
             <div className="flex lg:h-full lg:w-2/3 order-2 lg:order-1 select-text">
-                <div className="flex flex-col justify-start lg:justify-center items-start space-y-4">
+                <div className="flex flex-col justify-start lg:justify-center items-start space-y-2 md:space-y-4">
                     <motion.div
                         initial={{
                             y: -10,
