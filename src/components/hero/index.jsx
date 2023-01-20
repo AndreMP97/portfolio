@@ -6,8 +6,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
     const [text] = useTypewriter({
         words: ["I'm a Software Developer"],
-        loop: true,
-        delaySpeed: 2500
+        loop: true
     });
 
     return (
