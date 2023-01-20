@@ -42,30 +42,32 @@ export default function Navbar() {
             }}
             className="flex w-5/6 justify-between mt-20"
         >
-            <div className="flex">
+            <div className="flex w-1/4">
                 <h1 className="self-center text-3xl font-display text-white -rotate-12">AP</h1>
             </div>
 
             {/*Desktop*/}
-            <ul className="hidden md:inline-flex justify-center items-center md:space-x-4 lg:space-x-6 bg-gray-700 border border-gray-600 rounded-full px-4 py-2">
-                {navigation.map((item) => (
-                    <li key={item.name}
-                        className={
-                            item.current ?
-                                "text-white hover:text-gray-400 border-b-2 hover:border-gray-400 py-1 text-xs lg:text-sm cursor-pointer capitalize font-semibold"
-                                :
-                                "text-white hover:text-gray-400 text-xs lg:text-sm cursor-pointer capitalize font-semibold"
-                        }
-                    >
-                        <a href={item.href} className="flex items-center">
-                            {item.icon}
-                            {item.name}
-                        </a>
-                    </li>
-                ))}
-            </ul>
+            <div className="hidden md:flex w-2/4 justify-center items-center">
+                <ul className="hidden md:inline-flex md:space-x-4 lg:space-x-6 bg-gray-700 border border-gray-600 rounded-full px-4 py-2">
+                    {navigation.map((item) => (
+                        <li key={item.name}
+                            className={
+                                item.current ?
+                                    "text-white hover:text-gray-400 border-b-2 hover:border-gray-400 py-1 text-xs lg:text-sm cursor-pointer capitalize font-semibold"
+                                    :
+                                    "text-white hover:text-gray-400 text-xs lg:text-sm cursor-pointer capitalize font-semibold"
+                            }
+                        >
+                            <a href={item.href} className="flex items-center">
+                                {item.icon}
+                                {item.name}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
 
-            <div className="hidden md:flex">
+            <div className="hidden md:flex justify-end w-1/4">
                 <button
                     type="button"
                     className="inline-flex px-4 justify-center items-center text-xs lg:text-sm font-medium rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600 border border-gray-600 hover:border-gray-500"
