@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { FaLocationArrow, FaRegEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { FaLocationArrow, FaRegEnvelope } from "react-icons/fa";
 
 export default function Contact() {
     const { register, formState: { errors }, handleSubmit, trigger } = useForm();
