@@ -11,7 +11,7 @@ const renderer = ({ completed }) => {
   if (completed) {
     // Render the page when loader is done
     return (
-      <div className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory scrollbar-thin lg:scrollbar scrollbar-thumb-gray-600 scrollbar-track-gray-500 bg-gray-900">
+      <main className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory scrollbar-thin lg:scrollbar scrollbar-thumb-gray-600 scrollbar-track-gray-500 bg-gray-900">
           <nav className="container flex mx-auto sticky top-0 z-40 justify-center items-center h-0">
             <Navbar />
           </nav>
@@ -30,7 +30,7 @@ const renderer = ({ completed }) => {
           <footer className="container flex mx-auto z-40 justify-center items-center h-0">
             <Footer />
           </footer>
-      </div>
+      </main>
     );
   } else {
     // Render the loader component
