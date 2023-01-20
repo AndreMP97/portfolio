@@ -95,7 +95,7 @@ export default function Hero() {
                         <a href="mailto:andre.m.pacheco.97@gmail.com" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
-                                className="text-inherit bg-white hover:text-white hover:bg-gray-500 border border-transparent rounded-md px-4 py-2 font-semibold animate-pulse"
+                                className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-4 py-2 font-semibold animate-pulse"
                             >
                                 Hire me
                                 <span className="sr-only">Hire me</span>
@@ -104,7 +104,7 @@ export default function Hero() {
                         <a href="https://linkedin.com/in/andrempacheco97/" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
-                                className="text-white hover:text-gray-500 border border-transparent py-2"
+                                className="text-white hover:text-gray-400 border border-transparent py-2"
                             >
                                 <FaLinkedin size={32} />
                                 <span className="sr-only">LinkedIn</span>
@@ -113,7 +113,7 @@ export default function Hero() {
                         <a href="https://github.com/AndreMP97/" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
-                                className="text-white hover:text-gray-500 border border-transparent py-2"
+                                className="text-white hover:text-gray-400 border border-transparent py-2"
                             >
                                 <FaGithub size={32} />
                                 <span className="sr-only">Github</span>
