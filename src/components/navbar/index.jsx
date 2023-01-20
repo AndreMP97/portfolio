@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon, UserIcon, HomeIcon, CubeIcon, InboxIcon, ArrowDownTrayIcon } from "@heroicons/react/24/outline";
+import { motion } from "framer-motion";
 
 const navigation = [
     { name: "Home", href: "#home", current: false, icon: <HomeIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
@@ -27,7 +28,20 @@ export default function Navbar() {
     const [nav, setNav] = useState(false);
 
     return (
-        <div className="flex w-5/6 justify-between mt-20">
+        <motion.div
+            initial={{
+                y: -100,
+                opacity: 0
+            }}
+            animate={{
+                y: 0,
+                opacity: 1
+            }}
+            transition={{
+                duration: 1
+            }}
+            className="flex w-5/6 justify-between mt-20"
+        >
             <div className="flex">
                 <h1 className="self-center text-3xl font-display text-white -rotate-12">AP</h1>
             </div>
@@ -86,6 +100,6 @@ export default function Navbar() {
                     </button>
                 </ul>
             )}
-        </div>
+        </motion.div>
     )
 }
