@@ -2,10 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 //import Home from "./pages/home/index";
 import Error from "./components/error/";
 //import About from "./pages/about/index";
@@ -20,8 +17,7 @@ root.render(
 const router = createBrowserRouter([
   {
     path: "/portfolio",
-    element: <App />,
-    errorElement: <Error />
+    element: <App />
   },
   {
     path: "/",
