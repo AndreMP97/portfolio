@@ -17,7 +17,7 @@ root.render(
 const router = createBrowserRouter([
   {
     path: "/portfolio",
-    element: <App />
+    element: <App />,
   },
   {
     path: "/",
