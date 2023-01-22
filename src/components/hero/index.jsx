@@ -74,7 +74,7 @@ export default function Hero() {
                             duration: 0.5
                         }}
                         className="lg:w-5/6 space-y-1">
-                        <p className="text-base md:text-base xl:text-lg text-white text-justify">Passionate about web development and dedicated to create high-quality, dynamic, and interactive websites.
+                        <p className="text-base md:text-base xl:text-lg text-white text-justify">Passionate about web development and dedicated to creating high-quality, dynamic, and interactive websites.
                             Constantly learning new technologies to both improve my skills and stay current with the industry.
                             Always looking for new challenges to grow as a developer.</p>
                     </motion.div>
