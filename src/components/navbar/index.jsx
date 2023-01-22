@@ -47,7 +47,7 @@ export default function Navbar() {
             </div>
 
             {/*Desktop*/}
-            <div className="hidden md:flex w-2/4 ">
+            <div className="hidden md:flex w-2/4 justify-center items-center">
                 <ul className="hidden md:inline-flex md:space-x-4 lg:space-x-6 bg-gray-700 border border-gray-600 rounded-full px-4 py-2">
                     {navigation.map((item) => (
                         <li key={item.name}
