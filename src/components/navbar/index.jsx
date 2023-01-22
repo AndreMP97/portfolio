@@ -82,7 +82,7 @@ export default function Navbar() {
                 {nav ? <XMarkIcon className="text-white block h-6 w-6" /> : <Bars3Icon className="text-white block h-6 w-6" />}
             </div>
             {nav && (
-                <ul className="md:hidden flex flex-col h-auto w-full absolute left-0 justify-start items-center bg-gray-800 space-y-4 mt-9">
+                <ul className="md:hidden flex flex-col h-auto w-full absolute left-0 justify-start items-center bg-gray-800 space-y-4 mt-9 pb-4">
                     {navigation.map((item) => (
                         <li key={item.name}
                             className="text-white text-xl capitalize font-medium"
