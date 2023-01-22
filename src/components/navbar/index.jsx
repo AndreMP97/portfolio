@@ -3,10 +3,10 @@ import { Bars3Icon, XMarkIcon, UserIcon, HomeIcon, CubeIcon, InboxIcon, ArrowDow
 import { motion } from "framer-motion";
 
 const navigation = [
-    { name: "Home", href: "#home", current: false, icon: <HomeIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
-    { name: "About", href: "#about", current: false, icon: <UserIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
-    { name: "Projects", href: "#projects", current: false, icon: <CubeIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
-    { name: "Contact", href: "#contact", current: false, icon: <InboxIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
+    { name: "Home", href: "#home", current: false, icon: <HomeIcon className="block h-6 w-6 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
+    { name: "About", href: "#about", current: false, icon: <UserIcon className="block h-6 w-6 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
+    { name: "Projects", href: "#projects", current: false, icon: <CubeIcon className="block h-6 w-6 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
+    { name: "Contact", href: "#contact", current: false, icon: <InboxIcon className="block h-6 w-6 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
 ]
 
 /*function classNames(...classes) {
@@ -47,7 +47,7 @@ export default function Navbar() {
             </div>
 
             {/*Desktop*/}
-            <div className="hidden md:flex w-2/4 justify-center items-center">
+            <div className="hidden md:flex w-2/4 ">
                 <ul className="hidden md:inline-flex md:space-x-4 lg:space-x-6 bg-gray-700 border border-gray-600 rounded-full px-4 py-2">
                     {navigation.map((item) => (
                         <li key={item.name}
@@ -78,16 +78,16 @@ export default function Navbar() {
             </div>
 
             {/* Mobile */}
-            <div className="md:hidden z-40" onClick={() => setNav(!nav)}>
+            <div className="md:hidden flex z-40" onClick={() => setNav(!nav)}>
                 {nav ? <XMarkIcon className="text-white block h-6 w-6" /> : <Bars3Icon className="text-white block h-6 w-6" />}
             </div>
             {nav && (
-                <ul className="md:hidden absolute top-0 left-0 flex flex-col justify-center items-center w-full h-screen backdrop-blur-3xl space-y-4">
+                <ul className="md:hidden flex flex-col h-auto w-full absolute left-0 justify-start items-center bg-gray-800 space-y-4 mt-9">
                     {navigation.map((item) => (
                         <li key={item.name}
-                            className="text-white px-4 py-6 text-4xl capitalize font-medium"
+                            className="text-white text-xl capitalize font-medium"
                         >
-                            <a href={item.href} onClick={() => setNav(!nav)} className="flex">
+                            <a href={item.href} onClick={() => setNav(!nav)} className="flex items-center">
                                 {item.icon}
                                 {item.name}
                             </a>
@@ -95,9 +95,9 @@ export default function Navbar() {
                     ))}
                     <button
                         type="button"
-                        className="inline-flex text-white px-4 py-6 text-2xl capitalize font-medium bg-gray-900 rounded-md"
+                        className="inline-flex text-white px-2 py-2 text-xl capitalize font-medium bg-gray-700 rounded-md items-center"
                     >
-                        <ArrowDownTrayIcon className="block h-10 w-10 mr-1" />
+                        <ArrowDownTrayIcon className="block h-6 w-6 mr-1" />
                         Resume
                     </button>
                 </ul>
