@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row h-5/6 w-5/6 mx-auto justify-center">
             <div className="flex lg:h-full lg:w-2/3 order-2 lg:order-1 select-text">
                 <div className="flex flex-col justify-start lg:justify-center items-start space-y-2 md:space-y-4">
-                    <motion.div
+                    <motion.h2
                         initial={{
                             y: -10,
                             opacity: 0
@@ -26,10 +26,10 @@ export default function Hero() {
                             delay: 1,
                             duration: 0.5
                         }}
-                    >
-                        <h2 className="text-xl md:text-3xl xl:text-4xl text-white">Hello,</h2>
-                    </motion.div>
-                    <motion.div
+                        className="text-xl md:text-3xl xl:text-4xl text-white">
+                        Hello,
+                    </motion.h2>
+                    <motion.h1
                         initial={{
                             y: 10,
                             opacity: 0
@@ -42,10 +42,11 @@ export default function Hero() {
                             delay: 1.5,
                             duration: 0.5
                         }}
+                        className="text-2xl md:text-4xl xl:text-5xl text-white"
                     >
-                        <h1 className="text-2xl md:text-4xl xl:text-5xl text-white">My name is André Pacheco</h1>
-                    </motion.div>
-                    <motion.div
+                        My name is André Pacheco
+                    </motion.h1>
+                    <motion.h3
                         initial={{
                             y: 10,
                             opacity: 0
@@ -57,10 +58,12 @@ export default function Hero() {
                         transition={{
                             delay: 2,
                             duration: 0.5
-                        }}>
-                        <h3 className="h-5 text-lg md:h-6 xl:h-9 md:text-2xl xl:text-3xl text-white">{text}</h3>
-                    </motion.div>
-                    <motion.div
+                        }}
+                        className="h-5 text-lg md:h-6 xl:h-9 md:text-2xl xl:text-3xl text-white"
+                    >
+                        {text}
+                    </motion.h3>
+                    <motion.p
                         initial={{
                             y: 10,
                             opacity: 0
@@ -73,11 +76,12 @@ export default function Hero() {
                             delay: 2.5,
                             duration: 0.5
                         }}
-                        className="lg:w-5/6 space-y-1">
-                        <p className="text-base md:text-base xl:text-lg text-white text-justify">Passionate about web development and dedicated to creating high-quality, dynamic, and interactive websites.
-                            Constantly learning new technologies to both improve my skills and stay current with the industry.
-                            Always looking for new challenges to grow as a developer.</p>
-                    </motion.div>
+                        className="text-base md:text-base xl:text-lg text-white text-justify lg:w-5/6 space-y-1"
+                    >
+                        Passionate about web development and dedicated to creating high-quality, dynamic, and interactive websites.
+                        Constantly learning new technologies to both improve my skills and stay current with the industry.
+                        Always looking for new challenges to grow as a developer.
+                    </motion.p>
                     <motion.div
                         initial={{
                             y: 10,
