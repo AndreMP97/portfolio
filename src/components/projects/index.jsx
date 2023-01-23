@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt, FaPlusSquare } from "react-icons/fa";
 import { motion } from "framer-motion";
 import WEATHER from "../../assets/weather.jpg";
 import PESTA from "../../assets/PESTA.png";
@@ -28,9 +28,9 @@ export default function Projects() {
                     Projects
                 </motion.h1>
             </div>
-            <div className="flex lg:flex-col h-full mt-4 select-text overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 lg:overflow-hidden lg:snap-none">
+            <div className="flex lg:flex-col h-full mt-4 text-justify select-text overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 lg:overflow-hidden lg:snap-none">
                 {/* Project 1 */}
-                <div className="flex flex-col lg:flex-row lg:h-1/2 min-w-full justify-center lg:justify-start bg-inherit space-y-4 lg:space-y-0 lg:space-x-4 snap-center lg:snap-none">
+                <div className="flex flex-col lg:flex-row lg:h-1/2 min-w-full justify-center lg:justify-start bg-inherit space-y-4 lg:space-y-0 lg:space-x-4 snap-start lg:snap-none">
                     <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer" className="flex flex-col order-1 lg:w-1/2 justify-center items-center">
                         <motion.img
                             initial={{
@@ -70,7 +70,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="font-semibold text-white text-lg md:text-xl 2xl:text-2xl self-center"
+                            className="font-semibold text-white text-lg md:text-xl 2xl:text-2xl self-start"
                         >
                             Weather Forecast
                         </motion.p>
@@ -149,7 +149,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="flex space-x-2 self-center"
+                            className="flex space-x-2 self-end"
                         >
                             <a href="https://github.com/AndreMP97/weather-app" target="_blank" rel="noreferrer">
                                 <FaGithub size={32} className="text-white hover:text-gray-400 border border-transparent" />
@@ -161,7 +161,7 @@ export default function Projects() {
                     </div>
                 </div>
                 {/*Project 2*/}
-                <div className="flex flex-col lg:flex-row lg:h-1/2 min-w-full justify-center lg:justify-start bg-inherit space-y-4 lg:space-y-0 lg:space-x-4 snap-center lg:snap-none">
+                <div className="flex flex-col lg:flex-row lg:h-1/2 min-w-full justify-center lg:justify-start bg-inherit space-y-4 lg:space-y-0 lg:space-x-4 snap-start lg:snap-none">
                     <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer" className="flex flex-col order-1 lg:order-2 lg:w-1/3 2xl:w-1/2 justify-center items-center">
                         <motion.img
                             initial={{
@@ -200,7 +200,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="font-semibold text-white text-lg md:text-xl 2xl:text-2xl self-center"
+                            className="font-semibold text-white text-lg md:text-xl 2xl:text-2xl self-start"
                         >
                             Managment Platform
                         </motion.p>
@@ -283,17 +283,16 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="flex space-x-2 self-center items-center"
+                            className="flex space-x-2 self-end items-center"
                         >
-                            <Link
-                                to=""
-                                className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-4 py-2 font-semibold"
-                            >
-                                Learn more
-                            </Link>
                             <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer">
                                 <FaGithub size={32} className="text-white hover:text-gray-400 border border-transparent" />
                             </a>
+                            <Link
+                                to=""
+                            >
+                                <FaPlusSquare size={32} className="text-white hover:text-gray-400 border border-transparent" />
+                            </Link>
                         </motion.div>
                     </div>
                 </div>

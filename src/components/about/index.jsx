@@ -25,8 +25,10 @@ export default function About() {
                     About me
                 </motion.h1>
             </div>
-            <div className="flex flex-col h-full my-4 overflow-y-scroll scrollbar-none md:overflow-y-hidden lg:flex-row lg:space-x-4 select-text">
-                <div className="flex flex-col h-full space-y-2 lg:space-y-4 lg:w-7/12 2xl:w-full">
+            <div className="flex md:flex-col h-full mt-4 pb-4 
+            overflow-x-scroll md:overflow-hidden snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 md:snap-none
+            md:space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0 2xl:flex-col 2xl:space-x-0 2xl:space-y-4 select-text text-justify">
+                <div className="flex flex-col min-w-full space-y-2 lg:space-y-4 lg:w-7/12 lg:min-w-min 2xl:w-full overflow-y-scroll scrollbar-none snap-start md:snap-none">
                     <motion.p
                         initial={{
                             y: 10,
@@ -87,31 +89,10 @@ export default function About() {
                     >
                         Today, with the subjects that I learned during my B.Sc., I have the ability to design and develop software applications. Furthermore, I'm an avid learner who enjoys experimenting with new technologies during my free time, and I'm constantly striving to improve my skills to stay up-to-date with the industry.
                     </motion.p>
-                    <motion.div
-                        initial={{
-                            y: 10,
-                            opacity: 0
-                        }}
-                        transition={{
-                            delay: 2,
-                            duration: 0.5
-                        }}
-                        whileInView={{
-                            y: 0,
-                            opacity: 1
-                        }}
-                        viewport={{
-                            once: true
-                        }}
-                        className="flex flex-col h-full lg:hidden 2xl:flex"
-                    >
-                        <p className="font-semibold text-white text-base md:text-lg 2xl:text-xl mb-4">Technologies I've worked with:</p>
-                        <Skills />
-                    </motion.div>
                 </div>
                 <motion.div
                     initial={{
-                        x: 10,
+                        y: 10,
                         opacity: 0
                     }}
                     transition={{
@@ -119,15 +100,15 @@ export default function About() {
                         duration: 0.5
                     }}
                     whileInView={{
-                        x: 0,
+                        y: 0,
                         opacity: 1
                     }}
                     viewport={{
                         once: true
                     }}
-                    className="hidden lg:flex flex-col space-y-4 lg:w-5/12 2xl:hidden"
+                    className="flex flex-col min-w-full lg:space-y-4 lg:w-5/12 lg:min-w-min 2xl:space-y-0 2xl:w-full snap-start md:snap-none"
                 >
-                    <p className="font-semibold text-white text-base md:text-lg">Technologies I have worked with:</p>
+                    <p className="self-center md:self-start font-semibold text-white text-base mb-4 md:text-lg lg:mb-0 2xl:text-xl 2xl:mb-4">Technologies I have worked with:</p>
                     <Skills />
                 </motion.div>
             </div>
