@@ -106,22 +106,12 @@ export default function Hero() {
                             </button>
                         </a>
                         <a href="https://linkedin.com/in/andrempacheco97/" target="_blank" rel="noreferrer">
-                            <button
-                                type="button"
-                                className="text-white hover:text-gray-400 border border-transparent py-2"
-                            >
-                                <FaLinkedin size={32} />
-                                <span className="sr-only">LinkedIn</span>
-                            </button>
+                            <FaLinkedin size={36} className="text-white hover:text-gray-400 border border-transparent" />
+                            <span className="sr-only">LinkedIn</span>
                         </a>
                         <a href="https://github.com/AndreMP97/" target="_blank" rel="noreferrer">
-                            <button
-                                type="button"
-                                className="text-white hover:text-gray-400 border border-transparent py-2"
-                            >
-                                <FaGithub size={32} />
-                                <span className="sr-only">Github</span>
-                            </button>
+                            <FaGithub size={36} className="text-white hover:text-gray-400 border border-transparent" />
+                            <span className="sr-only">Github</span>
                         </a>
                     </motion.div>
                 </div>
