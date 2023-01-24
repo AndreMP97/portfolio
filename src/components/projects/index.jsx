@@ -151,13 +151,13 @@ export default function Projects() {
                             className="flex space-x-2 self-end"
                         >
                             <a href="https://github.com/AndreMP97/weather-app" target="_blank" rel="noreferrer">
-                                <button className="bg-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1">
-                                    <p className="text-inherit hover:text-white font-semibold">Repository</p>
+                                <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-1 py-1">
+                                    <p className="font-semibold">Repository</p>
                                 </button>
                             </a>
                             <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer">
-                                <button className="bg-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1">
-                                    <p className="text-inherit hover:text-white font-semibold">Live website</p>
+                                <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-1 py-1">
+                                    <p className="font-semibold">Live website</p>
                                 </button>
                             </a>
                         </motion.div>
@@ -289,15 +289,15 @@ export default function Projects() {
                             className="flex space-x-2 self-end items-center"
                         >
                             <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer">
-                                <button className="bg-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1">
-                                    <p className="text-inherit hover:text-white font-semibold">Repository</p>
+                                <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-1 py-1">
+                                    <p className="font-semibold">Repository</p>
                                 </button>
                             </a>
                             <Link
                                 to=""
-                                className="bg-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1"
+                                className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-1 py-1"
                             >
-                                <p className="text-inherit hover:text-white font-semibold">Learn more</p>
+                                <p className="font-semibold">Learn more</p>
                             </Link>
                         </motion.div>
                     </div>
