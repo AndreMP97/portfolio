@@ -22,12 +22,12 @@ export default function Projects() {
                     viewport={{
                         once: true
                     }}
-                    className="text-white border-b-4 border-gray-600 md:py-1"
+                    className="text-white border-b-4 border-gray-600 py-0.5 md:py-1.5 self-center"
                 >
                     Projects
                 </motion.h1>
             </div>
-            <div className="flex lg:flex-col h-full mt-4 text-justify select-text overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 lg:overflow-hidden lg:snap-none">
+            <div className="flex lg:flex-col h-full lg:mt-4 text-justify select-text overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 lg:overflow-hidden lg:snap-none">
                 {/* Project 1 */}
                 <div className="flex flex-col lg:flex-row lg:h-1/2 min-w-full justify-center lg:justify-start bg-inherit space-y-4 lg:space-y-0 lg:space-x-4 snap-start lg:snap-none">
                     <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer" className="flex flex-col order-1 lg:w-1/2 justify-center items-center">
