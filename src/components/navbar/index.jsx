@@ -9,21 +9,6 @@ const navigation = [
     { name: "Contact", href: "#contact", current: false, icon: <InboxIcon className="block h-6 w-6 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
 ]
 
-/*function classNames(...classes) {
-    return classes.filter(Boolean).join(" ")
-}
-
-function handleLocation(href) {
-    for (let i = 0; i < navigation.length; i++) {
-        if (navigation[i].href === href) {
-            navigation[i].current = true;
-        }
-        else {
-            navigation[i].current = false;
-        }
-    }
-}*/
-
 export default function Navbar() {
     const [nav, setNav] = useState(false);
 
@@ -42,9 +27,9 @@ export default function Navbar() {
             }}
             className="flex w-5/6 justify-between mt-20 md:mt-28"
         >
-            <div className="flex w-1/4">
+            <a href="#home" className="flex w-1/4" rel="noreferrer">
                 <h2 className="self-center font-display text-white -rotate-12">AP</h2>
-            </div>
+            </a>
 
             {/*Desktop*/}
             <div className="hidden md:flex w-2/4 justify-center items-center">
