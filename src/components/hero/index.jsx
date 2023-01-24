@@ -26,7 +26,7 @@ export default function Hero() {
                             delay: 1,
                             duration: 0.5
                         }}
-                        className="text-xl md:text-3xl xl:text-4xl text-white">
+                        className="text-white">
                         Hello,
                     </motion.h2>
                     <motion.h1
@@ -42,7 +42,7 @@ export default function Hero() {
                             delay: 1.5,
                             duration: 0.5
                         }}
-                        className="text-2xl md:text-4xl xl:text-5xl text-white"
+                        className="text-white"
                     >
                         My name is André Pacheco
                     </motion.h1>
@@ -59,11 +59,11 @@ export default function Hero() {
                             delay: 2,
                             duration: 0.5
                         }}
-                        className="h-5 text-lg md:h-6 xl:h-9 md:text-2xl xl:text-3xl text-white"
+                        className="text-white h-5 md:h-6"
                     >
                         {text}
                     </motion.h3>
-                    <motion.p
+                    <motion.h4
                         initial={{
                             y: 10,
                             opacity: 0
@@ -76,12 +76,12 @@ export default function Hero() {
                             delay: 2.5,
                             duration: 0.5
                         }}
-                        className="text-base md:text-base xl:text-lg text-white text-justify lg:w-5/6 space-y-1"
+                        className="text-white text-justify lg:w-5/6"
                     >
                         Passionate about web development and dedicated to creating high-quality, dynamic, and interactive websites.
                         Constantly learning new technologies to both improve my skills and stay current with the industry.
                         Always looking for new challenges to grow as a developer.
-                    </motion.p>
+                    </motion.h4>
                     <motion.div
                         initial={{
                             y: 10,

@@ -22,7 +22,7 @@ export default function Projects() {
                     viewport={{
                         once: true
                     }}
-                    className="text-white text-3xl font-semibold border-b-4 border-gray-600 md:text-4xl lg:text-5xl md:py-3"
+                    className="text-white border-b-4 border-gray-600 md:py-3"
                 >
                     Projects
                 </motion.h1>
@@ -53,7 +53,7 @@ export default function Projects() {
                         />
                     </a>
                     <div className="flex flex-col order-2 px-2 lg:w-1/2 md:justify-center lg:items-start space-y-2">
-                        <motion.p
+                        <motion.h3
                             initial={{
                                 y: -10,
                                 opacity: 0
@@ -69,10 +69,10 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="font-semibold text-white text-lg md:text-xl 2xl:text-2xl self-start"
+                            className="text-white self-start"
                         >
                             Weather Forecast
-                        </motion.p>
+                        </motion.h3>
                         <motion.p
                             initial={{
                                 y: 10,
@@ -89,7 +89,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="font-light text-white text-sm md:text-base 2xl:text-lg"
+                            className="text-white"
                         >
                             Small project that fetches the current weather as well as the forecast for the next day.
                         </motion.p>
@@ -109,7 +109,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="font-light text-white text-sm md:text-base 2xl:text-lg"
+                            className="text-white"
                         >
                             The goal of this project was to stay up-to-date with the React framework and further my knowledge on how to handle third-party APIs.
                         </motion.p>
@@ -129,7 +129,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="font-light text-white text-sm md:text-base 2xl:text-lg">
+                            className="text-white">
                             The main difficulties with this project were on how to use two different APIs and handle the data between them.
                         </motion.p>
                         <motion.div
@@ -151,13 +151,13 @@ export default function Projects() {
                             className="flex space-x-2 self-end"
                         >
                             <a href="https://github.com/AndreMP97/weather-app" target="_blank" rel="noreferrer">
-                                <button className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1 font-semibold">
-                                    Repository
+                                <button className="bg-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1">
+                                    <p className="text-inherit hover:text-white font-semibold">Repository</p>
                                 </button>
                             </a>
                             <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer">
-                                <button className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1 font-semibold">
-                                    Live website
+                                <button className="bg-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1">
+                                    <p className="text-inherit hover:text-white font-semibold">Live website</p>
                                 </button>
                             </a>
                         </motion.div>
@@ -187,7 +187,7 @@ export default function Projects() {
                             alt="PESTA" />
                     </a>
                     <div className="flex flex-col px-2 order-2 lg:order-1 lg:w-2/3 2xl:w-1/2 md:justify-center items-start space-y-2">
-                        <motion.p
+                        <motion.h3
                             initial={{
                                 y: -10,
                                 opacity: 0
@@ -203,10 +203,10 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="font-semibold text-white text-lg md:text-xl 2xl:text-2xl self-start"
+                            className="text-white self-start"
                         >
                             Managment Platform
-                        </motion.p>
+                        </motion.h3>
                         <motion.p
                             initial={{
                                 y: 10,
@@ -223,7 +223,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="font-light text-white text-sm md:text-base 2xl:text-lg"
+                            className="text-white"
                         >
                             This was a full-stack project done as part of my degree as a final evaluation.
                         </motion.p>
@@ -243,7 +243,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="font-light text-white text-sm md:text-base 2xl:text-lg"
+                            className="text-white"
                         >
                             The objectives were for companies to send their internship proposals,
                             for teachers to propose and manage projects,
@@ -266,7 +266,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="font-light text-white text-sm md:text-base 2xl:text-lg"
+                            className="text-white"
                         >
                             To complete this project, I had to research and choose which were the best software languages and frameworks to achieve the proposed objectives.
                         </motion.p>
@@ -289,15 +289,15 @@ export default function Projects() {
                             className="flex space-x-2 self-end items-center"
                         >
                             <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer">
-                                <button className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1 font-semibold">
-                                    Repository
+                                <button className="bg-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1">
+                                    <p className="text-inherit hover:text-white font-semibold">Repository</p>
                                 </button>
                             </a>
                             <Link
                                 to=""
-                                className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1 font-semibold"
+                                className="bg-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1"
                             >
-                                Learn more
+                                <p className="text-inherit hover:text-white font-semibold">Learn more</p>
                             </Link>
                         </motion.div>
                     </div>

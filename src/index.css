@@ -7,6 +7,31 @@
   src: url("./fonts/GreatVibes-Regular.ttf") format("truetype");
 }
 
+h1,
+.h1 {
+  @apply text-2xl font-semibold md:text-4xl;
+}
+
+h2,
+.h2 {
+  @apply text-xl font-semibold md:text-3xl;
+}
+
+h3,
+.h3 {
+  @apply text-lg font-semibold md:text-2xl;
+}
+
+h4,
+.h4 {
+  @apply text-base md:text-lg;
+}
+
+body,
+.p {
+  @apply text-sm font-light md:text-base;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
