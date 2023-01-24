@@ -7,20 +7,20 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <main className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory scrollbar-thin lg:scrollbar scrollbar-thumb-gray-600 scrollbar-track-gray-500 bg-gray-900">
+    <main className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory xl:snap-proximity scrollbar-thin lg:scrollbar scrollbar-thumb-gray-600 scrollbar-track-gray-500 bg-gray-900">
       <nav className="container flex mx-auto sticky top-0 z-40 justify-center items-center h-0">
         <Navbar />
       </nav>
-      <section id="home" className="container flex h-screen mx-auto snap-start bg-gray-800 select-none items-center">
+      <section id="home" className="container flex h-screen mx-auto snap-center xl:snap-end snap bg-gray-800 select-none items-center">
         <Hero />
       </section>
-      <section id="about" className="container flex h-screen mx-auto snap-start bg-gray-800 select-none items-center">
+      <section id="about" className="container flex h-screen mx-auto snap-center xl:snap-end bg-gray-800 select-none items-center">
         <About />
       </section>
-      <section id="projects" className="container flex h-screen mx-auto snap-start bg-gray-800 select-none items-center">
+      <section id="projects" className="container flex h-screen mx-auto snap-center xl:snap-end bg-gray-800 select-none items-center">
         <Projects />
       </section>
-      <section id="contact" className="container flex h-screen mx-auto snap-start bg-gray-800 select-none items-center">
+      <section id="contact" className="container flex h-screen mx-auto snap-center xl:snap-end bg-gray-800 select-none items-center">
         <Contact />
       </section>
       <footer className="container flex mx-auto z-40 justify-center items-center h-0">
