@@ -40,7 +40,7 @@ export default function Navbar() {
             transition={{
                 duration: 1
             }}
-            className="flex w-5/6 justify-between mt-20"
+            className="flex w-5/6 justify-between mt-20 md:mt-28"
         >
             <div className="flex w-1/4">
                 <h2 className="self-center font-display text-white -rotate-12">AP</h2>
