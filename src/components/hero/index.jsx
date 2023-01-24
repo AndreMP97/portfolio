@@ -96,7 +96,7 @@ export default function Hero() {
                             duration: 0.5
                         }}
                         className="inline-flex space-x-4 w-full justify-center items-center md:justify-start pt-6">
-                        <a href="mailto:andre.m.pacheco.97@gmail.com" target="_blank" rel="noreferrer">
+                        <a href="#contact" rel="noreferrer">
                             <button
                                 type="button"
                                 className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-4 py-2 font-semibold animate-pulse"
