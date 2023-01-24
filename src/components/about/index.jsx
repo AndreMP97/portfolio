@@ -20,7 +20,7 @@ export default function About() {
                     viewport={{
                         once: true
                     }}
-                    className="text-white font-semibold border-b-4 border-gray-600 md:py-1"
+                    className="text-white font-semibold border-b-4 border-gray-600 py-0.5 md:py-1 self-center"
                 >
                     About me
                 </motion.h1>
@@ -29,7 +29,7 @@ export default function About() {
             md:flex-col md:overflow-hidden md:snap-none md:space-y-4 md:space-x-0
             lg:flex-row lg:space-x-4 lg:space-y-0 
             2xl:flex-col 2xl:space-x-0 2xl:space-y-4">
-                <div className="flex flex-col min-w-full space-y-2 lg:space-y-4 lg:w-7/12 lg:min-w-min 2xl:w-full overflow-y-scroll scrollbar-none snap-start md:snap-none">
+                <div className="flex flex-col min-w-full space-y-2 lg:space-y-4 lg:w-7/12 lg:min-w-min 2xl:w-8/12 overflow-y-scroll scrollbar-none snap-start md:snap-none md:self-center lg:self-auto 2xl:self-center">
                     <motion.h4
                         initial={{
                             y: 10,
@@ -106,9 +106,9 @@ export default function About() {
                     viewport={{
                         once: true
                     }}
-                    className="flex flex-col min-w-full lg:space-y-4 lg:w-5/12 lg:min-w-min 2xl:space-y-0 2xl:w-full snap-start md:snap-none"
+                    className="flex flex-col min-w-full lg:space-y-4 lg:w-5/12 lg:min-w-min 2xl:space-y-0 2xl:w-8/12 snap-start md:snap-none md:self-center lg:self-start 2xl:self-center"
                 >
-                    <h3 className="self-center md:self-start text-white mb-4 lg:mb-0 2xl:mb-4">Technologies I have worked with:</h3>
+                    <h4 className="self-center text-white mb-4 lg:mb-0 2xl:mb-4 font-semibold">Technologies I have worked with:</h4>
                     <Skills />
                 </motion.div>
             </div>
