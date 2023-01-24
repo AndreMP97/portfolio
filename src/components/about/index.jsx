@@ -90,6 +90,7 @@ export default function About() {
                         Today, with the subjects that I learned during my B.Sc., I have the ability to design and develop software applications. Furthermore, I'm an avid learner who enjoys experimenting with new technologies during my free time, and I'm constantly striving to improve my skills to stay up-to-date with the industry.
                     </motion.h4>
                 </div>
+                {/*Desktop*/}
                 <motion.div
                     initial={{
                         y: 10,
@@ -106,12 +107,33 @@ export default function About() {
                     viewport={{
                         once: true
                     }}
-                    className="flex flex-col min-w-full snap-start
-                    md:snap-none md:self-center 
+                    className="hidden 
+                    md:flex md:flex-col md:min-w-full md:snap-none md:self-center 
                     lg:space-y-4 lg:w-5/12 lg:min-w-min lg:self-start
                     2xl:space-y-2 2xl:w-8/12 2xl:self-center"
                 >
                     <h4 className="self-center text-white mb-4 lg:mb-0 2xl:mb-4 font-semibold">Technologies I have worked with:</h4>
+                    <Skills />
+                </motion.div>
+                {/*Mobile*/}
+                <motion.div
+                    initial={{
+                        opacity: 0
+                    }}
+                    transition={{
+                        delay: 0.5,
+                        duration: 1.5
+                    }}
+                    whileInView={{
+                        opacity: 1
+                    }}
+                    viewport={{
+                        once: true
+                    }}
+                    className="flex flex-col min-w-full snap-start
+                    md:hidden"
+                >
+                    <h4 className="self-center text-white mb-4 font-semibold">Technologies I have worked with:</h4>
                     <Skills />
                 </motion.div>
             </div>
