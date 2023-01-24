@@ -12,9 +12,9 @@ export default function Error() {
                 <div className="flex flex-col justify-center items-center h-full">
                     <Link to="/portfolio/" className="flex h-12 w-12 bg-white text-gray-900 rounded-full justify-center items-center mb-4"><HomeIcon className="block h-10 w-10" /></Link>
                     <img className="w-80 mb-5" src={ErrorPage} alt="404" />
-                    <h1 className="text-white text-3xl font-bold mb-3">Oops!</h1>
-                    <p className="text-white text-xl font-medium mb-3">Sorry, an unexpected error has occurred.</p>
-                    <p className="text-white text-xl font-medium">
+                    <h1 className="text-white mb-3">Oops!</h1>
+                    <p className="text-white mb-3">Sorry, an unexpected error has occurred.</p>
+                    <p className="text-white">
                         <i>{error.statusText || error.message}</i>
                     </p>
                 </div>
