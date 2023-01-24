@@ -38,7 +38,7 @@ export default function Contact() {
                 </motion.h1>
             </div>
             <div className="flex flex-col h-full pt-4 justify-center items-center pb-4">
-                <div className="flex flex-col h-1/4 w-full lg:w-3/5 justify-center space-y-4 items-center">
+                <div className="flex flex-col h-1/4 w-full lg:w-3/5 justify-center space-y-4 items-center select-text">
                     <motion.div
                         initial={{
                             y: 10,
