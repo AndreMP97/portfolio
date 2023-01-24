@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { FaGithub, FaExternalLinkAlt, FaPlusSquare } from "react-icons/fa";
 import { motion } from "framer-motion";
 import WEATHER from "../../assets/weather.jpg";
 import PESTA from "../../assets/PESTA.png";
@@ -152,10 +151,14 @@ export default function Projects() {
                             className="flex space-x-2 self-end"
                         >
                             <a href="https://github.com/AndreMP97/weather-app" target="_blank" rel="noreferrer">
-                                <FaGithub size={32} className="text-white hover:text-gray-400 border border-transparent" />
+                                <button className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1 font-semibold">
+                                    Repository
+                                </button>
                             </a>
                             <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer">
-                                <FaExternalLinkAlt size={32} className="text-white hover:text-gray-400 border border-transparent" />
+                                <button className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1 font-semibold">
+                                    Live website
+                                </button>
                             </a>
                         </motion.div>
                     </div>
@@ -286,12 +289,15 @@ export default function Projects() {
                             className="flex space-x-2 self-end items-center"
                         >
                             <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer">
-                                <FaGithub size={32} className="text-white hover:text-gray-400 border border-transparent" />
+                                <button className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1 font-semibold">
+                                    Repository
+                                </button>
                             </a>
                             <Link
                                 to=""
+                                className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-1 py-1 font-semibold"
                             >
-                                <FaPlusSquare size={32} className="text-white hover:text-gray-400 border border-transparent" />
+                                Learn more
                             </Link>
                         </motion.div>
                     </div>
