@@ -29,7 +29,7 @@ h4,
 
 body,
 .p {
-  @apply text-sm font-light md:text-base;
+  @apply font-light text-sm md:text-base;
 }
 
 input:-webkit-autofill,
