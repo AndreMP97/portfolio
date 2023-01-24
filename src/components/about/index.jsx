@@ -26,8 +26,8 @@ export default function About() {
                 </motion.h1>
             </div>
             <div className="flex md:flex-col h-full mt-4 pb-4 
-            overflow-x-scroll md:overflow-hidden snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 md:snap-none
-            md:space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0 2xl:flex-col 2xl:space-x-0 2xl:space-y-4 select-text text-justify">
+            overflow-x-scroll md:overflow-hidden snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 space-x-4 md:snap-none
+            md:space-y-4 md:space-x-0 lg:flex-row lg:space-x-4 lg:space-y-0 2xl:flex-col 2xl:space-x-0 2xl:space-y-4 select-text text-justify">
                 <div className="flex flex-col min-w-full space-y-2 lg:space-y-4 lg:w-7/12 lg:min-w-min 2xl:w-full overflow-y-scroll scrollbar-none snap-start md:snap-none">
                     <motion.p
                         initial={{
