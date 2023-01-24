@@ -27,7 +27,7 @@ export default function Projects() {
                     Projects
                 </motion.h1>
             </div>
-            <div className="flex lg:flex-col h-full lg:mt-4 text-justify select-text overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 lg:overflow-hidden lg:snap-none">
+            <div className="flex lg:flex-col h-full lg:mt-4 overflow-x-scroll overflow-y-hidden snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 lg:overflow-hidden lg:snap-none">
                 {/* Project 1 */}
                 <div className="flex flex-col lg:flex-row lg:h-1/2 min-w-full justify-center lg:justify-start bg-inherit space-y-4 lg:space-y-0 lg:space-x-4 snap-start lg:snap-none">
                     <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer" className="flex flex-col order-1 lg:w-1/2 justify-center items-center">
@@ -52,7 +52,7 @@ export default function Projects() {
                             alt="Weather APP"
                         />
                     </a>
-                    <div className="flex flex-col order-2 px-2 lg:w-1/2 md:justify-center lg:items-start space-y-2">
+                    <div className="flex flex-col order-2 px-2 lg:w-1/2 md:justify-center lg:items-start space-y-2 text-justify select-text">
                         <motion.h3
                             initial={{
                                 y: -10,
@@ -148,7 +148,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="flex space-x-2 self-end"
+                            className="flex space-x-2 self-end select-none"
                         >
                             <a href="https://github.com/AndreMP97/weather-app" target="_blank" rel="noreferrer">
                                 <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-1 py-1">
@@ -186,7 +186,7 @@ export default function Projects() {
                             src={PESTA}
                             alt="PESTA" />
                     </a>
-                    <div className="flex flex-col px-2 order-2 lg:order-1 lg:w-2/3 2xl:w-1/2 md:justify-center items-start space-y-2">
+                    <div className="flex flex-col px-2 order-2 lg:order-1 lg:w-2/3 2xl:w-1/2 md:justify-center items-start space-y-2 text-justify select-text">
                         <motion.h3
                             initial={{
                                 y: -10,
@@ -286,7 +286,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="flex space-x-2 self-end items-center"
+                            className="flex space-x-2 self-end select-none"
                         >
                             <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer">
                                 <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-1 py-1">
