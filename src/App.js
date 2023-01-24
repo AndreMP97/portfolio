@@ -11,7 +11,7 @@ function App() {
       <nav className="container flex mx-auto sticky top-0 z-40 justify-center items-center h-0">
         <Navbar />
       </nav>
-      <section id="home" className="container flex h-screen mx-auto snap-center xl:snap-end snap bg-gray-800 select-none items-center">
+      <section id="home" className="container flex h-screen mx-auto snap-center xl:snap-end bg-gray-800 select-none items-center">
         <Hero />
       </section>
       <section id="about" className="container flex h-screen mx-auto snap-center xl:snap-end bg-gray-800 select-none items-center">
