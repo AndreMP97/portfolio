@@ -52,7 +52,7 @@ export default function Navbar() {
                 </ul>
             </div>
 
-            <div className="hidden md:flex justify-end w-1/4">
+            <a href="https://drive.google.com/uc?export=download&id=1EDfXmMCBuh2VwYUhCVJdmFSGd-8FQpa_" className="hidden md:flex justify-end w-1/4" rel="noreferrer">
                 <button
                     type="button"
                     className="inline-flex px-4 justify-center items-center rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600 border border-gray-600 hover:border-gray-500"
@@ -60,7 +60,7 @@ export default function Navbar() {
                     <ArrowDownTrayIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" />
                     <p className="font-medium">Resume</p>
                 </button>
-            </div>
+            </a>
 
             {/* Mobile */}
             <div className="md:hidden flex z-40" onClick={() => setNav(!nav)}>
