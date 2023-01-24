@@ -55,7 +55,7 @@ export default function Contact() {
                         viewport={{
                             once: true
                         }}
-                        className="flex space-x-4">
+                        className="flex space-x-4 items-center">
                         <FaLocationArrow size={32} className="text-white" />
                         <h4 className="text-white">Porto, Portugal</h4>
                     </motion.div>
@@ -75,7 +75,7 @@ export default function Contact() {
                         viewport={{
                             once: true
                         }}
-                        className="flex space-x-4">
+                        className="flex space-x-4 items-center">
                         <FaRegEnvelope size={32} className="text-white" />
                         <a href="mailto:andre.m.pacheco.97@gmail.com" rel="noreferrer" className="text-white">
                             <h4>andre.m.pacheco.97@gmail.com</h4>
