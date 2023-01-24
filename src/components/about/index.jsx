@@ -28,7 +28,7 @@ export default function About() {
             <div className="flex h-full mt-4 pb-4 overflow-x-scroll snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 space-x-4 select-text text-justify
             md:flex-col md:overflow-hidden md:snap-none md:space-y-4 md:space-x-0
             lg:flex-row lg:space-x-4 lg:space-y-0 
-            2xl:flex-col 2xl:space-x-0 2xl:space-y-4">
+            2xl:flex-col 2xl:space-x-0 2xl:space-y-6">
                 <div className="flex flex-col min-w-full space-y-2 lg:space-y-4 lg:w-7/12 lg:min-w-min 2xl:w-8/12 overflow-y-scroll scrollbar-none snap-start md:snap-none md:self-center lg:self-auto 2xl:self-center">
                     <motion.h4
                         initial={{
@@ -106,7 +106,10 @@ export default function About() {
                     viewport={{
                         once: true
                     }}
-                    className="flex flex-col min-w-full lg:space-y-4 lg:w-5/12 lg:min-w-min 2xl:space-y-0 2xl:w-8/12 snap-start md:snap-none md:self-center lg:self-start 2xl:self-center"
+                    className="flex flex-col min-w-full snap-start
+                    md:snap-none md:self-center 
+                    lg:space-y-4 lg:w-5/12 lg:min-w-min lg:self-start
+                    2xl:space-y-2 2xl:w-8/12 2xl:self-center"
                 >
                     <h4 className="self-center text-white mb-4 lg:mb-0 2xl:mb-4 font-semibold">Technologies I have worked with:</h4>
                     <Skills />
