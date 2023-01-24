@@ -43,7 +43,7 @@ export default function Navbar() {
             className="flex w-5/6 justify-between mt-20"
         >
             <div className="flex w-1/4">
-                <h1 className="self-center text-3xl font-display text-white -rotate-12">AP</h1>
+                <h2 className="self-center font-display text-white -rotate-12">AP</h2>
             </div>
 
             {/*Desktop*/}
@@ -53,14 +53,14 @@ export default function Navbar() {
                         <li key={item.name}
                             className={
                                 item.current ?
-                                    "text-white hover:text-gray-400 border-b-2 hover:border-gray-400 py-1 text-xs lg:text-sm cursor-pointer capitalize font-semibold"
+                                    "text-white hover:text-gray-400 border-b-2 hover:border-gray-400 py-1 cursor-pointer capitalize"
                                     :
-                                    "text-white hover:text-gray-400 text-xs lg:text-sm cursor-pointer capitalize font-semibold"
+                                    "text-white hover:text-gray-400 cursor-pointer capitalize"
                             }
                         >
                             <a href={item.href} className="flex items-center">
                                 {item.icon}
-                                {item.name}
+                                <p className="font-semibold">{item.name}</p>
                             </a>
                         </li>
                     ))}
@@ -70,10 +70,10 @@ export default function Navbar() {
             <div className="hidden md:flex justify-end w-1/4">
                 <button
                     type="button"
-                    className="inline-flex px-4 justify-center items-center text-xs lg:text-sm font-medium rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600 border border-gray-600 hover:border-gray-500"
+                    className="inline-flex px-4 justify-center items-center rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600 border border-gray-600 hover:border-gray-500"
                 >
                     <ArrowDownTrayIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" />
-                    Resume
+                    <p className="font-medium">Resume</p>
                 </button>
             </div>
 
@@ -85,20 +85,20 @@ export default function Navbar() {
                 <ul className="md:hidden flex flex-col h-auto w-full absolute left-0 justify-start items-center bg-gray-800 space-y-4 mt-9 pb-4">
                     {navigation.map((item) => (
                         <li key={item.name}
-                            className="text-white text-xl capitalize font-medium"
+                            className="text-white capitalize"
                         >
                             <a href={item.href} onClick={() => setNav(!nav)} className="flex items-center">
                                 {item.icon}
-                                {item.name}
+                                <h3>{item.name}</h3>
                             </a>
                         </li>
                     ))}
                     <button
                         type="button"
-                        className="inline-flex text-white px-2 py-2 text-xl capitalize font-medium bg-gray-700 rounded-md items-center"
+                        className="inline-flex text-white px-2 py-2 capitalize bg-gray-700 rounded-md items-center"
                     >
                         <ArrowDownTrayIcon className="block h-6 w-6 mr-1" />
-                        Resume
+                        <h4 className="font-medium">Resume</h4>
                     </button>
                 </ul>
             )}
