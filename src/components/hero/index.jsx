@@ -76,7 +76,7 @@ export default function Hero() {
                             delay: 2.5,
                             duration: 0.5
                         }}
-                        className="text-white text-justify lg:w-5/6"
+                        className="text-white text-justify lg:w-5/6 font-normal pt-4"
                     >
                         Passionate about web development and dedicated to creating high-quality, dynamic, and interactive websites.
                         Constantly learning new technologies to both improve my skills and stay current with the industry.
@@ -95,7 +95,7 @@ export default function Hero() {
                             delay: 3,
                             duration: 0.5
                         }}
-                        className="inline-flex space-x-4 w-full justify-center items-center md:justify-start">
+                        className="inline-flex space-x-4 w-full justify-center items-center md:justify-start pt-6">
                         <a href="mailto:andre.m.pacheco.97@gmail.com" target="_blank" rel="noreferrer">
                             <button
                                 type="button"
