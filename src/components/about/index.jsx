@@ -125,7 +125,7 @@ export default function About() {
                     }}
                     transition={{
                         delay: 0.5,
-                        duration: 1.5
+                        duration: 1
                     }}
                     whileInView={{
                         opacity: 1
