@@ -22,7 +22,7 @@ export default function Projects() {
                     viewport={{
                         once: true
                     }}
-                    className="text-white border-b-4 border-gray-600 md:py-3"
+                    className="text-white border-b-4 border-gray-600 md:py-1"
                 >
                     Projects
                 </motion.h1>

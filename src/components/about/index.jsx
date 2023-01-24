@@ -20,7 +20,7 @@ export default function About() {
                     viewport={{
                         once: true
                     }}
-                    className="text-white font-semibold border-b-4 border-gray-600 md:py-3"
+                    className="text-white font-semibold border-b-4 border-gray-600 md:py-1"
                 >
                     About me
                 </motion.h1>
