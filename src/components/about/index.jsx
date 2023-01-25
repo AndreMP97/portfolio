@@ -4,7 +4,10 @@ import Skills from "./skills";
 export default function About() {
     return (
         <section id="about" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24">
-            <div className="flex flex-col h-16 md:h-20 justify-end items-start">
+            <div
+                className="flex flex-col h-16 mb-4 justify-end items-start
+            md:h-20 md:mb-8"
+            >
                 <motion.h1
                     initial={{
                         y: -10,
@@ -25,14 +28,11 @@ export default function About() {
                     About me
                 </motion.h1>
             </div>
-            <div className="flex h-full mt-4 pb-4 overflow-x-scroll snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-500 space-x-4
-            md:flex-col md:overflow-hidden md:snap-none md:space-y-4 md:space-x-0
-            lg:flex-row lg:space-x-4 lg:space-y-0 
-            2xl:flex-col 2xl:space-x-0 2xl:space-y-6">
-                <div className="flex flex-col min-w-full space-y-2 select-text text-justify overflow-y-scroll scrollbar-none snap-start
-                md:snap-none md:self-center
-                lg:space-y-4 lg:w-7/12 lg:min-w-min lg:self-auto
-                2xl:w-8/12 2xl:self-center">
+            <div className="flex flex-col space-y-8 md:space-y-10">
+                <div className="flex flex-col w-full space-y-6 select-text text-justify self-center
+                md:space-y-8
+                xl:w-10/12
+                2xl:w-8/12">
                     <motion.p
                         initial={{
                             y: 10,
@@ -111,11 +111,11 @@ export default function About() {
                         once: true
                     }}
                     className="hidden
-                    md:flex md:flex-col md:min-w-full md:snap-none md:self-center 
-                    lg:space-y-4 lg:w-5/12 lg:min-w-min lg:self-start
-                    2xl:space-y-2 2xl:w-8/12 2xl:self-center"
+                    md:flex md:flex-col md:w-full md:self-center md:space-y-8 
+                    xl:w-10/12
+                    2xl:w-8/12"
                 >
-                    <h4 className="self-center text-white mb-4 lg:mb-0 2xl:mb-4 font-semibold">Technologies I have worked with:</h4>
+                    <h4 className="self-center text-white font-semibold">Technologies I have worked with:</h4>
                     <Skills />
                 </motion.div>
                 {/*Mobile*/}
@@ -133,10 +133,10 @@ export default function About() {
                     viewport={{
                         once: true
                     }}
-                    className="flex flex-col min-w-full snap-start
+                    className="flex flex-col min-w-full space-y-6
                     md:hidden"
                 >
-                    <p className="self-center text-white mb-4 font-semibold">Technologies I have worked with:</p>
+                    <p className="self-center text-white font-semibold">Technologies I have worked with:</p>
                     <Skills />
                 </motion.div>
             </div>
