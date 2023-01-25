@@ -24,12 +24,20 @@ h3,
 
 h4,
 .h4 {
-  @apply text-base md:text-lg;
+  @apply text-lg md:text-xl;
 }
 
 body,
 .p {
-  @apply font-light text-sm md:text-base;
+  @apply font-light text-base md:text-lg lg:text-base xl:text-lg;
+}
+
+#navbar a {
+  @apply font-medium text-lg md:text-base;
+}
+
+#skills {
+  @apply font-light text-sm
 }
 
 input:-webkit-autofill,

@@ -30,7 +30,7 @@ const icons = [
 
 export default function Skills() {
     return (
-        <div className="grid grid-cols-3 gap-4 md:portrait:grid-cols-4 md:landscape:grid-cols-3 md:gap-2 lg:gap-y-8 xl:gap-4 2xl:grid-cols-6 h-32">
+        <div id="skills" className="grid grid-cols-3 gap-4 md:portrait:grid-cols-4 md:landscape:grid-cols-3 md:gap-2 lg:gap-y-8 xl:gap-4 2xl:grid-cols-6 h-32">
             {icons.map((item) => (
                 <div key={item.name} className="flex flex-col justify-between items-center space-y-2">
                     {item.icon}

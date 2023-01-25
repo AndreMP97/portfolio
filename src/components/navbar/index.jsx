@@ -45,7 +45,7 @@ export default function Navbar() {
                         >
                             <a href={item.href} className="flex items-center">
                                 {item.icon}
-                                <p className="font-semibold">{item.name}</p>
+                                {item.name}
                             </a>
                         </li>
                     ))}
@@ -58,7 +58,7 @@ export default function Navbar() {
                     className="inline-flex px-4 justify-center items-center rounded-full shadow-sm text-white bg-gray-700 hover:bg-gray-600 border border-gray-600 hover:border-gray-500"
                 >
                     <ArrowDownTrayIcon className="block h-10 w-10 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" />
-                    <p className="font-medium">Resume</p>
+                    Resume
                 </button>
             </a>
 
@@ -67,26 +67,29 @@ export default function Navbar() {
                 {nav ? <XMarkIcon className="text-white block h-6 w-6" /> : <Bars3Icon className="text-white block h-6 w-6" />}
             </div>
             {nav && (
-                <ul className="md:hidden flex flex-col h-auto w-full absolute left-0 justify-start items-center bg-gray-800 space-y-4 mt-9 pb-4">
+                <ul className="md:hidden flex flex-col h-auto w-full absolute left-0 justify-start items-center bg-gray-800 space-y-4">
                     {navigation.map((item) => (
                         <li key={item.name}
                             className="text-white capitalize"
                         >
                             <a href={item.href} onClick={() => setNav(!nav)} className="flex items-center">
                                 {item.icon}
-                                <h3>{item.name}</h3>
+                                {item.name}
                             </a>
                         </li>
                     ))}
-                    <button
-                        type="button"
-                        className="inline-flex text-white px-2 py-2 capitalize bg-gray-700 rounded-md items-center"
-                    >
-                        <ArrowDownTrayIcon className="block h-6 w-6 mr-1" />
-                        <h4 className="font-medium">Resume</h4>
-                    </button>
+                    <a href="https://drive.google.com/uc?export=download&id=1EDfXmMCBuh2VwYUhCVJdmFSGd-8FQpa_" rel="noreferrer">
+                        <button
+                            type="button"
+                            className="inline-flex text-white px-2 py-2 capitalize bg-gray-700 rounded-md items-center"
+                        >
+                            <ArrowDownTrayIcon className="block h-6 w-6 mr-1" />
+                            Resume
+                        </button>
+                    </a>
                 </ul>
-            )}
-        </motion.div>
+            )
+            }
+        </motion.div >
     )
 }

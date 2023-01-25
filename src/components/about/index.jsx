@@ -33,7 +33,7 @@ export default function About() {
                 md:snap-none md:self-center
                 lg:space-y-4 lg:w-7/12 lg:min-w-min lg:self-auto
                 2xl:w-8/12 2xl:self-center">
-                    <motion.h4
+                    <motion.p
                         initial={{
                             y: 10,
                             opacity: 0
@@ -51,8 +51,8 @@ export default function About() {
                         }}
                         className="text-white">
                         I'm André Pacheco, a software developer living in Portugal. I enjoy creating applications that can be used by everyone on the internet. My interest in software development started at a young age when I decided to inspect the elements of a website, which led me to learn the basics of HTML and CSS.
-                    </motion.h4>
-                    <motion.h4
+                    </motion.p>
+                    <motion.p
                         initial={{
                             y: 10,
                             opacity: 0
@@ -71,8 +71,8 @@ export default function About() {
                         className="text-white"
                     >
                         Fast forwarding to 2018, I enrolled in a Bachelor of Science in Electrical and Computer Engineering, which combines the study of electrical engineering and computer science. During my degree, I became familiar with a multitude of subjects such as mathematics, physics, programming, electronics, instrumentation, automation, control, telecommunications, energy systems, and management.
-                    </motion.h4>
-                    <motion.h4
+                    </motion.p>
+                    <motion.p
                         initial={{
                             y: 10,
                             opacity: 0
@@ -91,7 +91,7 @@ export default function About() {
                         className="text-white"
                     >
                         Today, with the subjects that I learned during my B.Sc., I have the ability to design and develop software applications. Furthermore, I'm an avid learner who enjoys experimenting with new technologies during my free time, and I'm constantly striving to improve my skills to stay up-to-date with the industry.
-                    </motion.h4>
+                    </motion.p>
                 </div>
                 {/*Desktop*/}
                 <motion.div
@@ -136,7 +136,7 @@ export default function About() {
                     className="flex flex-col min-w-full snap-start
                     md:hidden"
                 >
-                    <h4 className="self-center text-white mb-4 font-semibold">Technologies I have worked with:</h4>
+                    <p className="self-center text-white mb-4 font-semibold">Technologies I have worked with:</p>
                     <Skills />
                 </motion.div>
             </div>
