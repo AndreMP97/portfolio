@@ -115,7 +115,7 @@ export default function About() {
                     xl:w-10/12
                     2xl:w-8/12"
                 >
-                    <h4 className="self-center text-white font-semibold">Technologies I have worked with:</h4>
+                    <h3 className="self-center text-white">Technologies I have worked with:</h3>
                     <Skills />
                 </motion.div>
                 {/*Mobile*/}
