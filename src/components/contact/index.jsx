@@ -16,7 +16,10 @@ export default function Contact() {
 
     return (
         <section id="contact" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24">
-            <div className="flex flex-col h-16 md:h-20 justify-end items-start">
+            <div
+                className="flex flex-col h-16 mb-4 justify-end items-start
+                md:h-20 md:mb-8"
+            >
                 <motion.h1
                     initial={{
                         y: -10,
@@ -37,8 +40,8 @@ export default function Contact() {
                     Contact me
                 </motion.h1>
             </div>
-            <div className="flex flex-col h-full pt-4 justify-center items-center pb-4">
-                <div className="flex flex-col h-1/4 w-full lg:w-3/5 justify-center space-y-4 items-center select-text">
+            <div className="flex flex-col justify-start items-center space-y-4 md:space-y-6">
+                <div className="flex flex-col w-full lg:w-3/5 justify-center space-y-4 items-center select-text">
                     <motion.div
                         initial={{
                             y: 10,
@@ -96,7 +99,7 @@ export default function Contact() {
                     viewport={{
                         once: true
                     }}
-                    className="flex h-3/4 w-full lg:w-3/5 text-white">
+                    className="flex w-full lg:w-3/5 text-white">
                     <form
                         onSubmit={handleSubmit(onSubmit)}
                         id="contactForm"
@@ -127,7 +130,7 @@ export default function Contact() {
                         <textarea {...register("message", { required: true })}
                             aria-invalid={errors.message ? "true" : "false"}
                             placeholder="Your message"
-                            className="resize-none h-64 w-full text-white border-b-2 bg-inherit focus:outline-none" />
+                            className="resize-none h-48 w-full text-white border-b-2 bg-inherit focus:outline-none" />
                         {errors.message?.type === "required" && <small className="text-red-600">Message is required</small>}
 
                         <button type="submit" className="h-8 w-full bg-white text-gray-800 rounded-md
