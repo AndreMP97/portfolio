@@ -148,15 +148,15 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="flex space-x-2 self-end select-none"
+                            className="flex space-x-4 self-center md:self-start select-none"
                         >
                             <a href="https://github.com/AndreMP97/weather-app" target="_blank" rel="noreferrer">
-                                <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-1 py-1">
+                                <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-2 py-1">
                                     <p className="font-semibold">Repository</p>
                                 </button>
                             </a>
                             <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer">
-                                <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-1 py-1">
+                                <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-2 py-1">
                                     <p className="font-semibold">Live website</p>
                                 </button>
                             </a>
@@ -286,16 +286,16 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="flex space-x-2 self-end select-none"
+                            className="flex space-x-4 self-center md:self-start select-none"
                         >
                             <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer">
-                                <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-1 py-1">
+                                <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-2 py-1">
                                     <p className="font-semibold">Repository</p>
                                 </button>
                             </a>
                             <Link
                                 to=""
-                                className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-1 py-1"
+                                className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-2 py-1"
                             >
                                 <p className="font-semibold">Learn more</p>
                             </Link>
