@@ -15,10 +15,10 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24">
+        <section id="contact" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24 pb-5 md:pb-10">
             <div
-                className="flex flex-col h-16 mb-4 justify-end items-start
-                md:h-20 md:mb-8"
+                className="flex flex-col h-16 mb-8 justify-end items-start
+                md:h-20 md:mb-16"
             >
                 <motion.h1
                     initial={{
@@ -40,7 +40,7 @@ export default function Contact() {
                     Contact me
                 </motion.h1>
             </div>
-            <div className="flex flex-col justify-start items-center space-y-4 md:space-y-6">
+            <div className="flex flex-col justify-start items-center space-y-10 md:space-y-20">
                 <div className="flex flex-col w-full lg:w-3/5 justify-center space-y-4 items-center select-text">
                     <motion.div
                         initial={{
@@ -106,7 +106,7 @@ export default function Contact() {
                         target="_blank"
                         action="https://formsubmit.co/c16896ae7ac26bc84e6819287adad09a"
                         method="POST"
-                        className="flex flex-col h-full w-full space-y-2 md:space-y-4">
+                        className="flex flex-col h-full w-full space-y-4 md:space-y-6">
                         <input {...register("firstName", { required: true, maxLength: 128 })}
                             aria-invalid={errors.firstName ? "true" : "false"}
                             placeholder="First Name"

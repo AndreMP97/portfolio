@@ -6,7 +6,7 @@ import PESTA from "../../assets/PESTA.png";
 export default function Projects() {
     return (
         <section id="projects" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24">
-            <div className="flex flex-col h-16 mb-4 justify-end items-start
+            <div className="flex flex-col h-16 mb-8 justify-end items-start
             md:h-20 md:mb-16">
                 <motion.h1
                     initial={{
