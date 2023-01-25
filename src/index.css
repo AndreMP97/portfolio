@@ -40,6 +40,10 @@ body,
   @apply font-light text-sm
 }
 
+#contactForm {
+  @apply text-base md:text-lg lg:text-base xl:text-lg 
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
