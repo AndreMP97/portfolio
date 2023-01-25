@@ -5,8 +5,8 @@ export default function About() {
     return (
         <section id="about" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24">
             <div
-                className="flex flex-col h-16 mb-4 justify-end items-start
-            md:h-20 md:mb-8"
+                className="flex flex-col h-16 mb-8 justify-end items-start
+            md:h-20 md:mb-16"
             >
                 <motion.h1
                     initial={{
@@ -28,8 +28,8 @@ export default function About() {
                     About me
                 </motion.h1>
             </div>
-            <div className="flex flex-col space-y-8 md:space-y-10">
-                <div className="flex flex-col w-full space-y-6 select-text text-justify self-center
+            <div className="flex flex-col space-y-8 md:space-y-20">
+                <div className="flex flex-col w-full space-y-6 select-text self-center
                 md:space-y-8
                 xl:w-10/12
                 2xl:w-8/12">
@@ -111,7 +111,7 @@ export default function About() {
                         once: true
                     }}
                     className="hidden
-                    md:flex md:flex-col md:w-full md:self-center md:space-y-8 
+                    md:flex md:flex-col md:w-full md:self-center md:space-y-16
                     xl:w-10/12
                     2xl:w-8/12"
                 >
