@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import WEATHER from "../../assets/weather.jpg";
+import WEATHER from "../../assets/WEATHER.png";
 import PESTA from "../../assets/PESTA.png";
 
 export default function Projects() {
     return (
         <section id="projects" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24">
             <div className="flex flex-col h-16 mb-4 justify-end items-start
-            md:h-20 md:mb-8">
+            md:h-20 md:mb-16">
                 <motion.h1
                     initial={{
                         y: -10,
@@ -28,12 +28,11 @@ export default function Projects() {
                     Projects
                 </motion.h1>
             </div>
-            <div className="flex flex-col space-y-8 md:space-y-10">
+            <div className="flex flex-col space-y-8 md:space-y-20">
                 {/* Project 1 */}
-                <div className="flex flex-col min-w-full justify-center space-y-4
-                md:space-y-6
-                xl:flex-row xl:justify-start xl:space-x-4 xl:space-y-0">
-                    <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer" className="flex flex-col order-1 xl:w-1/2 justify-center items-center">
+                <div className="flex flex-col min-w-full justify-center mt-4
+                xl:flex-row xl:justify-start">
+                    <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer" className="flex flex-col order-1 xl:w-1/2 justify-start items-center">
                         <motion.img
                             initial={{
                                 x: -50,
@@ -50,15 +49,15 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="w-11/12 lg:w-7/12 xl:w-11/12 rounded-md"
+                            className="w-full md:w-11/12 lg:w-9/12 xl:w-full rounded-md"
                             src={WEATHER}
                             alt="Weather APP"
                         />
                     </a>
-                    <div className="flex flex-col order-2 px-2 justify-center space-y-2 text-justify select-text
-                    md:w-11/12 md:self-center
-                    lg:w-7/12
-                    xl:w-1/2 xl:items-start">
+                    <div className="flex flex-col w-full order-2 justify-center space-y-6 select-text self-center
+                    md:w-11/12 md:space-y-6
+                    lg:w-9/12
+                    xl:w-1/2 xl:items-start xl:px-2 xl:pl-8">
                         <motion.h3
                             initial={{
                                 y: -10,
@@ -75,7 +74,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-white self-start mb-2"
+                            className="text-white self-start mt-8 mb-4 md:mt-12 xl:mt-0 xl:mb-8"
                         >
                             Weather Forecast
                         </motion.h3>
@@ -154,7 +153,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="flex space-x-4 self-center md:self-start select-none pt-4"
+                            className="flex space-x-4 self-center md:self-start select-none pt-4 md:pt-8"
                         >
                             <a href="https://github.com/AndreMP97/weather-app" target="_blank" rel="noreferrer">
                                 <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-2 py-1">
@@ -170,10 +169,9 @@ export default function Projects() {
                     </div>
                 </div>
                 {/*Project 2*/}
-                <div className="flex flex-col min-w-full justify-center space-y-4
-                md:space-y-6
-                xl:flex-row xl:justify-start xl:space-x-4 xl:space-y-0">
-                    <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer" className="flex flex-col order-1 xl:order-2 xl:w-1/3 justify-center items-center">
+                <div className="flex flex-col min-w-full justify-center
+                xl:flex-row xl:justify-start">
+                    <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer" className="flex flex-col order-1 xl:order-2 xl:w-1/2 justify-start items-center">
                         <motion.img
                             initial={{
                                 x: 50,
@@ -190,14 +188,14 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="w-9/12 md:w-10/12 lg:w-7/12 xl:w-11/12 rounded-md"
+                            className="w-full md:w-11/12 lg:w-9/12 xl:w-full rounded-md"
                             src={PESTA}
                             alt="PESTA" />
                     </a>
-                    <div className="flex flex-col order-1 px-2 justify-center space-y-2 text-justify select-text
-                    md:w-11/12 md:self-center
-                    lg:w-7/12
-                    xl:w-2/3 xl:items-start">
+                    <div className="flex flex-col w-full order-1 justify-center space-y-6 select-text self-center
+                    md:w-11/12 md:space-y-6
+                    lg:w-9/12
+                    xl:w-1/2 xl:items-start xl:px-2 xl:pr-8">
                         <motion.h3
                             initial={{
                                 y: -10,
@@ -214,7 +212,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-white self-start mb-2"
+                            className="text-white self-start mt-12 xl:mt-0 mb-8"
                         >
                             Managment Platform
                         </motion.h3>
@@ -297,7 +295,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="flex space-x-4 self-center md:self-start select-none pt-4"
+                            className="flex space-x-4 self-center md:self-start select-none pt-4 md:pt-8"
                         >
                             <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer">
                                 <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-2 py-1">
