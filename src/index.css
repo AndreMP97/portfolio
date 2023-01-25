@@ -36,10 +36,6 @@ body,
   @apply font-medium text-lg md:text-base;
 }
 
-#skills {
-  @apply font-light text-sm
-}
-
 #contactForm {
   @apply text-base md:text-lg lg:text-base xl:text-lg 
 }
