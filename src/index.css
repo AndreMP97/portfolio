@@ -29,7 +29,7 @@ h4,
 
 body,
 .p {
-  @apply font-light text-base md:text-lg lg:text-base xl:text-lg;
+  @apply font-light text-base md:text-lg;
 }
 
 #navbar a {

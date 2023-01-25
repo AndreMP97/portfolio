@@ -10,7 +10,7 @@ export default function Hero() {
     });
 
     return (
-        <div className="flex flex-col lg:flex-row h-5/6 w-5/6 mx-auto justify-center">
+        <section id="home" className="flex flex-col lg:flex-row h-screen w-5/6 mx-auto justify-center">
             <div className="flex lg:h-full lg:w-2/3 order-2 lg:order-1 select-text">
                 <div className="flex flex-col justify-start lg:justify-center items-start space-y-2 md:space-y-4">
                     <motion.h2
@@ -135,10 +135,10 @@ export default function Hero() {
                     <div className="absolute border border-gray-400 lg:h-48 lg:w-48 xl:h-64 xl:w-64 rounded-full animate-ping" />
                     <div className="absolute border border-gray-700 lg:h-60 lg:w-60 xl:h-72 xl:w-72 rounded-full" />
                     <div className="absolute border border-gray-600 lg:h-64 lg:w-64 xl:h-80 xl:w-80 rounded-full animate-pulse" />
-                    <div className="absolute border border-gray-500 h-48 w-48 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-96 xl:w-96 rounded-full animate-pulse" />
-                    <img className="h-48 w-48 md:h-64 md:w-64 lg:h-60 lg:w-60 xl:h-72 xl:w-72 rounded-full" src={Picture} alt="Profile" />
+                    <div className="absolute border border-gray-500 h-36 w-36 md:h-64 md:w-64 lg:h-72 lg:w-72 xl:h-96 xl:w-96 rounded-full animate-pulse" />
+                    <img className="h-36 w-36 md:h-64 md:w-64 lg:h-60 lg:w-60 xl:h-72 xl:w-72 rounded-full" src={Picture} alt="Profile" />
                 </div>
             </motion.div>
-        </div>
+        </section>
     )
 }

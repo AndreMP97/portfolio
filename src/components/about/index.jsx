@@ -3,7 +3,7 @@ import Skills from "./skills";
 
 export default function About() {
     return (
-        <div className="flex flex-col h-5/6 w-5/6 mx-auto">
+        <section id="about" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24">
             <div className="flex flex-col h-16 md:h-20 justify-end items-start">
                 <motion.h1
                     initial={{
@@ -110,7 +110,7 @@ export default function About() {
                     viewport={{
                         once: true
                     }}
-                    className="hidden 
+                    className="hidden
                     md:flex md:flex-col md:min-w-full md:snap-none md:self-center 
                     lg:space-y-4 lg:w-5/12 lg:min-w-min lg:self-start
                     2xl:space-y-2 2xl:w-8/12 2xl:self-center"
@@ -140,6 +140,6 @@ export default function About() {
                     <Skills />
                 </motion.div>
             </div>
-        </div>
+        </section>
     )
 }

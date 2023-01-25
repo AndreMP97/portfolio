@@ -7,26 +7,21 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <main className="h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory xl:snap-none scrollbar-thin lg:scrollbar scrollbar-thumb-gray-600 scrollbar-track-gray-500 bg-gray-900">
-      <nav id="navbar" className="container flex mx-auto sticky top-0 z-40 justify-center items-center h-0">
+    <div id="content" className="relative flex flex-col h-screen bg-gray-900
+    overflow-y-scroll scroll-smooth scrollbar-thin lg:scrollbar scrollbar-thumb-gray-600 scrollbar-track-gray-500">
+      <header className="fixed flex h-20 md:h-28 w-full z-40">
         <Navbar />
-      </nav>
-      <section id="home" className="container flex h-screen mx-auto snap-center bg-gray-800 select-none items-center">
+      </header>
+      <main className="container flex flex-col mx-auto bg-gray-800">
         <Hero />
-      </section>
-      <section id="about" className="container flex h-screen mx-auto snap-center bg-gray-800 select-none items-center">
         <About />
-      </section>
-      <section id="projects" className="container flex h-screen mx-auto snap-center bg-gray-800 select-none items-center">
         <Projects />
-      </section>
-      <section id="contact" className="container flex h-screen mx-auto snap-center bg-gray-800 select-none items-center">
         <Contact />
-      </section>
-      <footer className="container flex mx-auto z-40 justify-center items-center h-0">
-        <Footer />
-      </footer>
-    </main>
+      </main>
+      <footer id="footer" className="container flex mx-auto z-40 justify-center bg-gray-800 items-center h-24">
+          <Footer />
+        </footer>
+    </div>
   );
 }
 
