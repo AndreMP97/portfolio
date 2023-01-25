@@ -18,7 +18,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
-      <footer id="footer" className="container flex mx-auto z-40 justify-center bg-gray-800 items-center h-24">
+      <footer id="footer" className="container flex mx-auto z-40 justify-center bg-gray-800 items-center">
           <Footer />
         </footer>
     </div>
