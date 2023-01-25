@@ -78,9 +78,9 @@ export default function Contact() {
                         viewport={{
                             once: true
                         }}
-                        className="flex space-x-4 items-center">
-                        <FaRegEnvelope size={32} className="text-white" />
-                        <a href="mailto:andre.m.pacheco.97@gmail.com" rel="noreferrer" className="text-white">
+                        className="flex space-x-4 items-center text-white hover:text-gray-400">
+                        <FaRegEnvelope size={32} />
+                        <a href="mailto:andre.m.pacheco.97@gmail.com" rel="noreferrer">
                             <p>andre.m.pacheco.97@gmail.com</p>
                         </a>
                     </motion.div>
@@ -112,26 +112,26 @@ export default function Contact() {
                             placeholder="First Name"
                             className="w-full text-white border-b-2 bg-inherit focus:outline-none py-2"
                         />
-                        {errors.firstName?.type === "required" && <small className="text-red-600">First name is required</small>}
+                        {errors.firstName?.type === "required" && <small className="text-red-400">First name is required</small>}
 
                         <input {...register("lastName", { required: true, maxLength: 128 })}
                             aria-invalid={errors.lastName ? "true" : "false"}
                             placeholder="Last Name"
                             className="w-full text-white border-b-2 bg-inherit focus:outline-none py-2" />
-                        {errors.lastName?.type === "required" && <small className="text-red-600">Last name is required</small>}
+                        {errors.lastName?.type === "required" && <small className="text-red-400">Last name is required</small>}
 
                         <input {...register("email", { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })}
                             aria-invalid={errors.email ? "true" : "false"}
                             placeholder="Email"
                             className="w-full text-white border-b-2 bg-inherit focus:outline-none py-2" />
-                        {errors.email?.type === "required" && <small className="text-red-600">Email is required</small>}
-                        {errors.email?.type === "pattern" && <small className="text-red-600">Invalid email address.</small>}
+                        {errors.email?.type === "required" && <small className="text-red-400">Email is required</small>}
+                        {errors.email?.type === "pattern" && <small className="text-red-400">Invalid email address.</small>}
 
                         <textarea {...register("message", { required: true })}
                             aria-invalid={errors.message ? "true" : "false"}
                             placeholder="Your message"
                             className="resize-none h-48 w-full text-white border-b-2 bg-inherit focus:outline-none" />
-                        {errors.message?.type === "required" && <small className="text-red-600">Message is required</small>}
+                        {errors.message?.type === "required" && <small className="text-red-400">Message is required</small>}
 
                         <button type="submit" className="h-8 w-full bg-white text-gray-800 rounded-md
                         hover:bg-gray-600 hover:text-white">
