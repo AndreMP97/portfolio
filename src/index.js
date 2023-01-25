@@ -16,11 +16,8 @@ root.render(
 
 const router = createBrowserRouter([
   {
-    path: "/portfolio",
-    element: <App />
-  },
-  {
     path: "/",
+    element: <App />,
     errorElement: <Error />
   }
 ]);

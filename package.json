@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
-  "version": "0.2.4",
-  "homepage": "https://andremp97.github.io/portfolio",
+  "version": "0.3.0",
+  "homepage": "https://andremp.com/",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.7",
