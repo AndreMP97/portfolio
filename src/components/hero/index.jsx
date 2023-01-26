@@ -3,6 +3,16 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
+function verifyHeight() {
+    let viewportHeight = window.innerHeight;
+    if (viewportHeight < 720) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
 export default function Hero() {
     const [text] = useTypewriter({
         words: ["I'm a Software Developer"],
@@ -10,7 +20,12 @@ export default function Hero() {
     });
 
     return (
-        <section id="home" className="flex flex-col lg:flex-row h-screen w-5/6 mx-auto justify-center">
+        <section id="home" className={
+            verifyHeight() ?
+                "flex flex-col lg:flex-row h-[calc(100vh+80px)] w-5/6 mx-auto justify-center"
+                :
+                "flex flex-col lg:flex-row h-screen w-5/6 mx-auto justify-center"
+        }>
             <div className="flex lg:h-full lg:w-2/3 order-2 lg:order-1 select-text">
                 <div className="flex flex-col justify-start lg:justify-center items-start space-y-2 md:space-y-4">
                     <motion.h2
