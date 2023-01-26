@@ -39,7 +39,7 @@ export default function Hero() {
                             delay: 1,
                             duration: 0.5
                         }}
-                        className="text-white">
+                        className="text-white self-center mt-6 md:self-start lg:mt-0">
                         Hello,
                     </motion.h2>
                     <motion.h1
