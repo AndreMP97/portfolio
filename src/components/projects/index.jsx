@@ -314,7 +314,7 @@ export default function Projects() {
                             </a>
                             <Link
                                 to=""
-                                className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-2 py-1"
+                                className="hidden bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-2 py-1"
                             >
                                 <p className="font-semibold">Learn more</p>
                             </Link>
