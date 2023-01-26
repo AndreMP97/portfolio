@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import WEATHER from "../../assets/WEATHER.png";
 import PESTA from "../../assets/PESTA.png";
 
 export default function Projects() {
+    const [isInView1, setIsInView1] = useState(false);
+    const [isInView2, setIsInView2] = useState(false);
+
     return (
         <section id="projects" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24">
             <div className="flex flex-col h-16 mb-11 justify-end items-start
@@ -21,7 +25,8 @@ export default function Projects() {
                         opacity: 1
                     }}
                     viewport={{
-                        once: true
+                        once: true,
+                        amount: 0.2
                     }}
                     className="text-white border-b-4 border-gray-600 py-0.5 md:py-1.5 self-center"
                 >
@@ -30,8 +35,17 @@ export default function Projects() {
             </div>
             <div className="flex flex-col space-y-14 md:space-y-20">
                 {/* Project 1 */}
-                <div className="flex flex-col min-w-full justify-center mt-3 md:mt-4
-                xl:flex-row xl:justify-start">
+                <motion.div
+                    whileInView={() => {
+                        // when element in viewport , set IsInView true!
+                        setIsInView1(true);
+                    }}
+                    viewport={{
+                        once: true, 
+                        amount: 0.1 
+                    }}
+                    className="flex flex-col min-w-full justify-center mt-3 md:mt-4
+                    xl:flex-row xl:justify-start">
                     <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer" className="flex flex-col order-1 xl:w-1/2 justify-start items-center">
                         <motion.img
                             initial={{
@@ -42,12 +56,10 @@ export default function Projects() {
                                 delay: 1,
                                 duration: 1
                             }}
-                            whileInView={{
+                            animate={
+                                isInView1 && {
                                 x: 0,
                                 opacity: 1
-                            }}
-                            viewport={{
-                                once: true
                             }}
                             className="w-full md:w-11/12 lg:w-9/12 xl:w-full rounded-md"
                             src={WEATHER}
@@ -67,12 +79,10 @@ export default function Projects() {
                                 delay: 1,
                                 duration: 1
                             }}
-                            whileInView={{
+                            animate={
+                                isInView1 && {
                                 y: 0,
                                 opacity: 1
-                            }}
-                            viewport={{
-                                once: true
                             }}
                             className="text-white self-start mt-8 mb-2 md:mt-12 xl:mt-0 xl:mb-8"
                         >
@@ -87,12 +97,10 @@ export default function Projects() {
                                 delay: 2,
                                 duration: 0.5
                             }}
-                            whileInView={{
+                            animate={
+                                isInView1 && {
                                 y: 0,
                                 opacity: 1
-                            }}
-                            viewport={{
-                                once: true
                             }}
                             className="text-white"
                         >
@@ -107,12 +115,10 @@ export default function Projects() {
                                 delay: 2.5,
                                 duration: 0.5
                             }}
-                            whileInView={{
+                            animate={
+                                isInView1 && {
                                 y: 0,
                                 opacity: 1
-                            }}
-                            viewport={{
-                                once: true
                             }}
                             className="text-white"
                         >
@@ -127,12 +133,10 @@ export default function Projects() {
                                 delay: 3,
                                 duration: 0.5
                             }}
-                            whileInView={{
+                            animate={
+                                isInView1 && {
                                 y: 0,
                                 opacity: 1
-                            }}
-                            viewport={{
-                                once: true
                             }}
                             className="text-white">
                             The main difficulties with this project were on how to use two different APIs and handle the data between them.
@@ -146,12 +150,10 @@ export default function Projects() {
                                 delay: 3.5,
                                 duration: 0.5
                             }}
-                            whileInView={{
+                            animate={
+                                isInView1 && {
                                 y: 0,
                                 opacity: 1
-                            }}
-                            viewport={{
-                                once: true
                             }}
                             className="flex space-x-4 self-center md:self-start select-none pt-5 md:pt-8"
                         >
@@ -167,10 +169,18 @@ export default function Projects() {
                             </a>
                         </motion.div>
                     </div>
-                </div>
+                </motion.div>
                 {/*Project 2*/}
-                <div className="flex flex-col min-w-full justify-center
-                xl:flex-row xl:justify-start">
+                <motion.div
+                    whileInView={() => {
+                        setIsInView2(true);
+                    }}
+                    viewport={{ 
+                        once: true, 
+                        amount: 0.3 
+                    }}
+                    className="flex flex-col min-w-full justify-center
+                    xl:flex-row xl:justify-start">
                     <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer" className="flex flex-col order-1 xl:order-2 xl:w-1/2 justify-start items-center">
                         <motion.img
                             initial={{
@@ -181,13 +191,11 @@ export default function Projects() {
                                 delay: 1,
                                 duration: 1
                             }}
-                            whileInView={{
-                                x: 0,
-                                opacity: 1
-                            }}
-                            viewport={{
-                                once: true
-                            }}
+                            animate={
+                                isInView2 && {
+                                    x: 0,
+                                    opacity: 1
+                                }}
                             className="w-full md:w-11/12 lg:w-9/12 xl:w-full rounded-md"
                             src={PESTA}
                             alt="PESTA" />
@@ -205,13 +213,11 @@ export default function Projects() {
                                 delay: 1,
                                 duration: 1
                             }}
-                            whileInView={{
-                                y: 0,
-                                opacity: 1
-                            }}
-                            viewport={{
-                                once: true
-                            }}
+                            animate={
+                                isInView2 && {
+                                    y: 0,
+                                    opacity: 1
+                                }}
                             className="text-white self-start mt-8 mb-2 md:mt-12 xl:mt-0 xl:mb-8"
                         >
                             Managment Platform
@@ -225,13 +231,11 @@ export default function Projects() {
                                 delay: 2,
                                 duration: 0.5
                             }}
-                            whileInView={{
-                                y: 0,
-                                opacity: 1
-                            }}
-                            viewport={{
-                                once: true
-                            }}
+                            animate={
+                                isInView2 && {
+                                    y: 0,
+                                    opacity: 1
+                                }}
                             className="text-white"
                         >
                             This was a full-stack project done as part of my degree as a final evaluation.
@@ -245,13 +249,11 @@ export default function Projects() {
                                 delay: 2.5,
                                 duration: 0.5
                             }}
-                            whileInView={{
-                                y: 0,
-                                opacity: 1
-                            }}
-                            viewport={{
-                                once: true
-                            }}
+                            animate={
+                                isInView2 && {
+                                    y: 0,
+                                    opacity: 1
+                                }}
                             className="text-white"
                         >
                             The objectives were for companies to send their internship proposals,
@@ -268,13 +270,11 @@ export default function Projects() {
                                 delay: 3,
                                 duration: 0.5
                             }}
-                            whileInView={{
-                                y: 0,
-                                opacity: 1
-                            }}
-                            viewport={{
-                                once: true
-                            }}
+                            animate={
+                                isInView2 && {
+                                    y: 0,
+                                    opacity: 1
+                                }}
                             className="text-white"
                         >
                             To complete this project, I had to research and choose which were the best software languages and frameworks to achieve the proposed objectives.
@@ -288,13 +288,11 @@ export default function Projects() {
                                 delay: 3.5,
                                 duration: 0.5
                             }}
-                            whileInView={{
-                                y: 0,
-                                opacity: 1
-                            }}
-                            viewport={{
-                                once: true
-                            }}
+                            animate={
+                                isInView2 && {
+                                    y: 0,
+                                    opacity: 1
+                                }}
                             className="flex space-x-4 self-center md:self-start select-none pt-5 md:pt-8"
                         >
                             <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer">
@@ -310,7 +308,7 @@ export default function Projects() {
                             </Link>
                         </motion.div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     )
