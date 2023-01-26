@@ -39,7 +39,7 @@ export default function Hero() {
                             delay: 1,
                             duration: 0.5
                         }}
-                        className="text-white self-center mt-6 md:self-start lg:mt-0">
+                        className="text-white self-center mt-6 md:mt-12 lg:self-start lg:mt-0">
                         Hello,
                     </motion.h2>
                     <motion.h1
@@ -55,7 +55,7 @@ export default function Hero() {
                             delay: 1.5,
                             duration: 0.5
                         }}
-                        className="text-white"
+                        className="text-white self-center lg:self-start"
                     >
                         My name is André Pacheco
                     </motion.h1>
@@ -72,7 +72,7 @@ export default function Hero() {
                             delay: 2,
                             duration: 0.5
                         }}
-                        className="text-white h-5 md:h-6"
+                        className="text-white h-5 md:h-6 self-center lg:self-start"
                     >
                         {text}
                     </motion.h3>
@@ -108,7 +108,7 @@ export default function Hero() {
                             delay: 3,
                             duration: 0.5
                         }}
-                        className="inline-flex space-x-4 w-full justify-center items-center md:justify-start pt-4 md:pt-6">
+                        className="inline-flex space-x-4 w-full justify-center items-center pt-4 md:pt-6 lg:justify-start">
                         <a href="#contact" rel="noreferrer">
                             <button
                                 type="button"
