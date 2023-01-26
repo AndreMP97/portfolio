@@ -1,8 +1,11 @@
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { FaLocationArrow, FaRegEnvelope } from "react-icons/fa";
 
 export default function Contact() {
+    const [isInView, setIsInView] = useState(false);
+
     const { register, formState: { errors }, handleSubmit, trigger } = useForm();
     const onSubmit = async (e) => {
         const isValid = await trigger();
@@ -33,7 +36,8 @@ export default function Contact() {
                         opacity: 1
                     }}
                     viewport={{
-                        once: true
+                        once: true,
+                        amount: 1
                     }}
                     className="text-white border-b-4 border-gray-600 py-0.5 md:py-1.5 self-center"
                 >
@@ -41,7 +45,16 @@ export default function Contact() {
                 </motion.h1>
             </div>
             <div className="flex flex-col justify-start items-center space-y-14 md:space-y-20">
-                <div className="flex flex-col w-full lg:w-3/5 justify-center space-y-4 md:space-y-6 items-center select-text">
+                <motion.div
+                    whileInView={() => {
+                        // when element in viewport , set IsInView true!
+                        setIsInView(true);
+                    }}
+                    viewport={{
+                        once: true,
+                        amount: 0.4
+                    }}
+                    className="flex flex-col w-full lg:w-3/5 justify-center space-y-4 md:space-y-6 items-center select-text">
                     <motion.div
                         initial={{
                             y: 10,
@@ -51,13 +64,12 @@ export default function Contact() {
                             delay: 1,
                             duration: 0.5
                         }}
-                        whileInView={{
-                            y: 0,
-                            opacity: 1
-                        }}
-                        viewport={{
-                            once: true
-                        }}
+                        animate={
+                            isInView && {
+                                y: 0,
+                                opacity: 1
+                            }
+                        }
                         className="flex space-x-4 items-center">
                         <FaLocationArrow size={32} className="text-white" />
                         <p className="text-white">Porto, Portugal</p>
@@ -71,20 +83,19 @@ export default function Contact() {
                             delay: 1.5,
                             duration: 0.5
                         }}
-                        whileInView={{
-                            y: 0,
-                            opacity: 1
-                        }}
-                        viewport={{
-                            once: true
-                        }}
+                        animate={
+                            isInView && {
+                                y: 0,
+                                opacity: 1
+                            }
+                        }
                         className="flex space-x-4 items-center text-white hover:text-gray-400">
                         <FaRegEnvelope size={32} />
                         <a href="mailto:andre.m.pacheco.97@gmail.com" rel="noreferrer">
                             <p>andre.m.pacheco.97@gmail.com</p>
                         </a>
                     </motion.div>
-                </div>
+                </motion.div>
                 <motion.div
                     initial={{
                         opacity: 0
@@ -97,7 +108,8 @@ export default function Contact() {
                         opacity: 1
                     }}
                     viewport={{
-                        once: true
+                        once: true,
+                        amount: 0.3
                     }}
                     className="flex w-full lg:w-3/5 text-white">
                     <form

@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
 import Skills from "./skills";
 
 export default function About() {
+    const [isInView1, setIsInView1] = useState(false);
+    const [isInView2, setIsInView2] = useState(false);
+
     return (
         <section id="about" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24">
             <div
@@ -21,7 +25,8 @@ export default function About() {
                         opacity: 1
                     }}
                     viewport={{
-                        once: true
+                        once: true,
+                        amount: 0.8
                     }}
                     className="text-white font-semibold border-b-4 border-gray-600 py-0.5 md:py-1 self-center"
                 >
@@ -29,10 +34,19 @@ export default function About() {
                 </motion.h1>
             </div>
             <div className="flex flex-col space-y-14 md:space-y-20">
-                <div className="flex flex-col w-full space-y-6 select-text self-center
-                md:space-y-8
-                xl:w-10/12
-                2xl:w-8/12">
+                <motion.div
+                    whileInView={() => {
+                        // when element in viewport , set IsInView true!
+                        setIsInView1(true);
+                    }}
+                    viewport={{
+                        once: true,
+                        amount: 0.4
+                    }}
+                    className="flex flex-col w-full space-y-6 select-text self-center
+                    md:space-y-8
+                    xl:w-10/12
+                    2xl:w-8/12">
                     <motion.p
                         initial={{
                             y: 10,
@@ -42,13 +56,12 @@ export default function About() {
                             delay: 0.5,
                             duration: 0.5
                         }}
-                        whileInView={{
-                            y: 0,
-                            opacity: 1
-                        }}
-                        viewport={{
-                            once: true
-                        }}
+                        animate={
+                            isInView1 && {
+                                y: 0,
+                                opacity: 1
+                            }
+                        }
                         className="text-white">
                         I'm André Pacheco, a software developer living in Portugal. I enjoy creating applications that can be used by everyone on the internet. My interest in software development started at a young age when I decided to inspect the elements of a website, which led me to learn the basics of HTML and CSS.
                     </motion.p>
@@ -61,13 +74,12 @@ export default function About() {
                             delay: 1,
                             duration: 0.5
                         }}
-                        whileInView={{
-                            y: 0,
-                            opacity: 1
-                        }}
-                        viewport={{
-                            once: true
-                        }}
+                        animate={
+                            isInView1 && {
+                                y: 0,
+                                opacity: 1
+                            }
+                        }
                         className="text-white"
                     >
                         Fast forwarding to 2018, I enrolled in a Bachelor of Science in Electrical and Computer Engineering, which combines the study of electrical engineering and computer science. During my degree, I became familiar with a multitude of subjects such as mathematics, physics, programming, electronics, instrumentation, automation, control, telecommunications, energy systems, and management.
@@ -81,63 +93,67 @@ export default function About() {
                             delay: 1.5,
                             duration: 0.5
                         }}
-                        whileInView={{
-                            y: 0,
-                            opacity: 1
-                        }}
-                        viewport={{
-                            once: true
-                        }}
+                        animate={
+                            isInView1 && {
+                                y: 0,
+                                opacity: 1
+                            }
+                        }
                         className="text-white"
                     >
                         Today, with the subjects that I learned during my B.Sc., I have the ability to design and develop software applications. Furthermore, I'm an avid learner who enjoys experimenting with new technologies during my free time, and I'm constantly striving to improve my skills to stay up-to-date with the industry.
                     </motion.p>
-                </div>
-                {/*Desktop*/}
+                </motion.div>
                 <motion.div
-                    initial={{
-                        y: 10,
-                        opacity: 0
-                    }}
-                    transition={{
-                        delay: 2,
-                        duration: 0.5
-                    }}
-                    whileInView={{
-                        y: 0,
-                        opacity: 1
+                    whileInView={() => {
+                        // when element in viewport , set IsInView true!
+                        setIsInView2(true);
                     }}
                     viewport={{
-                        once: true
+                        once: true,
+                        amount: 0.8
                     }}
-                    className="hidden
-                    md:flex md:flex-col md:w-full md:self-center md:space-y-16
+                    className="flex flex-col w-full self-center space-y-10
+                    md:space-y-16
                     xl:w-10/12
                     2xl:w-8/12"
                 >
-                    <h3 className="self-center text-white">Technologies I have worked with:</h3>
-                    <Skills />
-                </motion.div>
-                {/*Mobile*/}
-                <motion.div
-                    initial={{
-                        opacity: 0
-                    }}
-                    transition={{
-                        delay: 0.5,
-                        duration: 1
-                    }}
-                    whileInView={{
-                        opacity: 1
-                    }}
-                    viewport={{
-                        once: true
-                    }}
-                    className="flex flex-col min-w-full space-y-10
-                    md:hidden"
-                >
-                    <p className="self-center text-white font-semibold">Technologies I have worked with:</p>
-                    <Skills />
+                    <motion.h3
+                        initial={{
+                            y: -10,
+                            opacity: 0
+                        }}
+                        transition={{
+                            delay: 0.5,
+                            duration: 0.5
+                        }}
+                        animate={
+                            isInView2 && {
+                                y: 0,
+                                opacity: 1
+                            }
+                        }
+                        className="self-center text-white font-semibold">
+                        Working with:
+                    </motion.h3>
+                    <motion.div
+                        initial={{
+                            y: 10,
+                            opacity: 0
+                        }}
+                        transition={{
+                            delay: 1,
+                            duration: 1
+                        }}
+                        animate={
+                            isInView2 && {
+                                y: 0,
+                                opacity: 1
+                            }
+                        }
+                    >
+                        <Skills />
+                    </motion.div>
                 </motion.div>
             </div>
         </section>

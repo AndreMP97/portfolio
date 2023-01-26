@@ -26,7 +26,7 @@ export default function Projects() {
                     }}
                     viewport={{
                         once: true,
-                        amount: 0.2
+                        amount: 0.8
                     }}
                     className="text-white border-b-4 border-gray-600 py-0.5 md:py-1.5 self-center"
                 >
@@ -41,15 +41,15 @@ export default function Projects() {
                         setIsInView1(true);
                     }}
                     viewport={{
-                        once: true, 
-                        amount: 0.1 
+                        once: true,
+                        amount: 0.1
                     }}
                     className="flex flex-col min-w-full justify-center mt-3 md:mt-4
                     xl:flex-row xl:justify-start">
                     <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer" className="flex flex-col order-1 xl:w-1/2 justify-start items-center">
                         <motion.img
                             initial={{
-                                x: -50,
+                                y: -10,
                                 opacity: 0
                             }}
                             transition={{
@@ -58,9 +58,10 @@ export default function Projects() {
                             }}
                             animate={
                                 isInView1 && {
-                                x: 0,
-                                opacity: 1
-                            }}
+                                    y: 0,
+                                    opacity: 1
+                                }
+                            }
                             className="w-full md:w-11/12 lg:w-9/12 xl:w-full rounded-md"
                             src={WEATHER}
                             alt="Weather APP"
@@ -81,9 +82,10 @@ export default function Projects() {
                             }}
                             animate={
                                 isInView1 && {
-                                y: 0,
-                                opacity: 1
-                            }}
+                                    y: 0,
+                                    opacity: 1
+                                }
+                            }
                             className="text-white self-start mt-8 mb-2 md:mt-12 xl:mt-0 xl:mb-8"
                         >
                             Weather Forecast
@@ -99,9 +101,10 @@ export default function Projects() {
                             }}
                             animate={
                                 isInView1 && {
-                                y: 0,
-                                opacity: 1
-                            }}
+                                    y: 0,
+                                    opacity: 1
+                                }
+                            }
                             className="text-white"
                         >
                             Small project that fetches the current weather as well as the forecast for the next day.
@@ -117,9 +120,10 @@ export default function Projects() {
                             }}
                             animate={
                                 isInView1 && {
-                                y: 0,
-                                opacity: 1
-                            }}
+                                    y: 0,
+                                    opacity: 1
+                                }
+                            }
                             className="text-white"
                         >
                             The goal of this project was to stay up-to-date with the React framework and further my knowledge on how to handle third-party APIs.
@@ -135,9 +139,10 @@ export default function Projects() {
                             }}
                             animate={
                                 isInView1 && {
-                                y: 0,
-                                opacity: 1
-                            }}
+                                    y: 0,
+                                    opacity: 1
+                                }
+                            }
                             className="text-white">
                             The main difficulties with this project were on how to use two different APIs and handle the data between them.
                         </motion.p>
@@ -152,9 +157,10 @@ export default function Projects() {
                             }}
                             animate={
                                 isInView1 && {
-                                y: 0,
-                                opacity: 1
-                            }}
+                                    y: 0,
+                                    opacity: 1
+                                }
+                            }
                             className="flex space-x-4 self-center md:self-start select-none pt-5 md:pt-8"
                         >
                             <a href="https://github.com/AndreMP97/weather-app" target="_blank" rel="noreferrer">
@@ -175,16 +181,16 @@ export default function Projects() {
                     whileInView={() => {
                         setIsInView2(true);
                     }}
-                    viewport={{ 
-                        once: true, 
-                        amount: 0.3 
+                    viewport={{
+                        once: true,
+                        amount: 0.3
                     }}
                     className="flex flex-col min-w-full justify-center
                     xl:flex-row xl:justify-start">
                     <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer" className="flex flex-col order-1 xl:order-2 xl:w-1/2 justify-start items-center">
                         <motion.img
                             initial={{
-                                x: 50,
+                                y: -10,
                                 opacity: 0
                             }}
                             transition={{
@@ -193,9 +199,10 @@ export default function Projects() {
                             }}
                             animate={
                                 isInView2 && {
-                                    x: 0,
+                                    y: 0,
                                     opacity: 1
-                                }}
+                                }
+                            }
                             className="w-full md:w-11/12 lg:w-9/12 xl:w-full rounded-md"
                             src={PESTA}
                             alt="PESTA" />
@@ -217,7 +224,8 @@ export default function Projects() {
                                 isInView2 && {
                                     y: 0,
                                     opacity: 1
-                                }}
+                                }
+                            }
                             className="text-white self-start mt-8 mb-2 md:mt-12 xl:mt-0 xl:mb-8"
                         >
                             Managment Platform
@@ -235,7 +243,8 @@ export default function Projects() {
                                 isInView2 && {
                                     y: 0,
                                     opacity: 1
-                                }}
+                                }
+                            }
                             className="text-white"
                         >
                             This was a full-stack project done as part of my degree as a final evaluation.
@@ -253,7 +262,8 @@ export default function Projects() {
                                 isInView2 && {
                                     y: 0,
                                     opacity: 1
-                                }}
+                                }
+                            }
                             className="text-white"
                         >
                             The objectives were for companies to send their internship proposals,
@@ -274,10 +284,11 @@ export default function Projects() {
                                 isInView2 && {
                                     y: 0,
                                     opacity: 1
-                                }}
+                                }
+                            }
                             className="text-white"
                         >
-                            To complete this project, I had to research and choose which were the best software languages and frameworks to achieve the proposed objectives.
+                            To complete this project, research was done to choose which were the best software languages and frameworks to achieve the proposed objectives.
                         </motion.p>
                         <motion.div
                             initial={{
@@ -292,7 +303,8 @@ export default function Projects() {
                                 isInView2 && {
                                     y: 0,
                                     opacity: 1
-                                }}
+                                }
+                            }
                             className="flex space-x-4 self-center md:self-start select-none pt-5 md:pt-8"
                         >
                             <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer">
