@@ -33,7 +33,7 @@ export default function Skills() {
         <div className="grid grid-cols-3 gap-4
         md:grid-cols-6 md:gap-y-8">
             {icons.map((item) => (
-                <div key={item.name} className="flex flex-col justify-between items-center space-y-2">
+                <div key={item.name} className="flex flex-col justify-between items-center space-y-2 md:space-y-4">
                     {item.icon}
                     <p className="text-white">{item.name}</p>
                 </div>

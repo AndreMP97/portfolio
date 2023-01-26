@@ -15,9 +15,9 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24 pb-5 md:pb-10">
+        <section id="contact" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24 pb-8 md:pb-10">
             <div
-                className="flex flex-col h-16 mb-8 justify-end items-start
+                className="flex flex-col h-16 mb-11 justify-end items-start
                 md:h-20 md:mb-16"
             >
                 <motion.h1
@@ -40,8 +40,8 @@ export default function Contact() {
                     Contact me
                 </motion.h1>
             </div>
-            <div className="flex flex-col justify-start items-center space-y-10 md:space-y-20">
-                <div className="flex flex-col w-full lg:w-3/5 justify-center space-y-4 items-center select-text">
+            <div className="flex flex-col justify-start items-center space-y-14 md:space-y-20">
+                <div className="flex flex-col w-full lg:w-3/5 justify-center space-y-4 md:space-y-6 items-center select-text">
                     <motion.div
                         initial={{
                             y: 10,
@@ -133,8 +133,8 @@ export default function Contact() {
                             className="resize-none h-48 w-full text-white border-b-2 bg-inherit focus:outline-none" />
                         {errors.message?.type === "required" && <small className="text-red-400">Message is required</small>}
 
-                        <button type="submit" className="h-8 w-full bg-white text-gray-800 rounded-md
-                        hover:bg-gray-600 hover:text-white">
+                        <button type="submit" className="bg-white text-gray-800 rounded-md
+                        hover:bg-gray-600 hover:text-white py-2">
                             <p className="font-medium">Send message</p>
                         </button>
                     </form>

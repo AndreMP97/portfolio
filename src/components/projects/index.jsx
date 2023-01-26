@@ -6,7 +6,7 @@ import PESTA from "../../assets/PESTA.png";
 export default function Projects() {
     return (
         <section id="projects" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24">
-            <div className="flex flex-col h-16 mb-8 justify-end items-start
+            <div className="flex flex-col h-16 mb-11 justify-end items-start
             md:h-20 md:mb-16">
                 <motion.h1
                     initial={{
@@ -28,9 +28,9 @@ export default function Projects() {
                     Projects
                 </motion.h1>
             </div>
-            <div className="flex flex-col space-y-8 md:space-y-20">
+            <div className="flex flex-col space-y-14 md:space-y-20">
                 {/* Project 1 */}
-                <div className="flex flex-col min-w-full justify-center mt-4
+                <div className="flex flex-col min-w-full justify-center mt-3 md:mt-4
                 xl:flex-row xl:justify-start">
                     <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer" className="flex flex-col order-1 xl:w-1/2 justify-start items-center">
                         <motion.img
@@ -54,7 +54,7 @@ export default function Projects() {
                             alt="Weather APP"
                         />
                     </a>
-                    <div className="flex flex-col w-full order-2 justify-center space-y-6 select-text self-center
+                    <div className="flex flex-col w-full order-2 justify-center space-y-4 select-text self-center
                     md:w-11/12 md:space-y-6
                     lg:w-9/12
                     xl:w-1/2 xl:items-start xl:px-2 xl:pl-8">
@@ -74,7 +74,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-white self-start mt-8 mb-4 md:mt-12 xl:mt-0 xl:mb-8"
+                            className="text-white self-start mt-8 mb-2 md:mt-12 xl:mt-0 xl:mb-8"
                         >
                             Weather Forecast
                         </motion.h3>
@@ -153,7 +153,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="flex space-x-4 self-center md:self-start select-none pt-4 md:pt-8"
+                            className="flex space-x-4 self-center md:self-start select-none pt-5 md:pt-8"
                         >
                             <a href="https://github.com/AndreMP97/weather-app" target="_blank" rel="noreferrer">
                                 <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-2 py-1">
@@ -192,7 +192,7 @@ export default function Projects() {
                             src={PESTA}
                             alt="PESTA" />
                     </a>
-                    <div className="flex flex-col w-full order-1 justify-center space-y-6 select-text self-center
+                    <div className="flex flex-col w-full order-1 justify-center space-y-4 select-text self-center
                     md:w-11/12 md:space-y-6
                     lg:w-9/12
                     xl:w-1/2 xl:items-start xl:px-2 xl:pr-8">
@@ -212,7 +212,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="text-white self-start mt-12 xl:mt-0 mb-8"
+                            className="text-white self-start mt-8 mb-2 md:mt-12 xl:mt-0 xl:mb-8"
                         >
                             Managment Platform
                         </motion.h3>
@@ -295,7 +295,7 @@ export default function Projects() {
                             viewport={{
                                 once: true
                             }}
-                            className="flex space-x-4 self-center md:self-start select-none pt-4 md:pt-8"
+                            className="flex space-x-4 self-center md:self-start select-none pt-5 md:pt-8"
                         >
                             <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer">
                                 <button className="bg-white hover:bg-gray-400 text-inherit hover:text-white border border-transparent rounded-md px-2 py-1">

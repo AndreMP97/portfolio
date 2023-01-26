@@ -89,7 +89,7 @@ export default function Hero() {
                             delay: 2.5,
                             duration: 0.5
                         }}
-                        className="text-white lg:w-5/6 font-normal pt-4"
+                        className="text-white lg:w-5/6 pt-3 md:pt-4"
                     >
                         Passionate about web development and dedicated to creating high-quality, dynamic, and interactive websites.
                         Constantly learning new technologies to both improve my skills and stay current with the industry.
@@ -108,14 +108,14 @@ export default function Hero() {
                             delay: 3,
                             duration: 0.5
                         }}
-                        className="inline-flex space-x-4 w-full justify-center items-center md:justify-start pt-6">
+                        className="inline-flex space-x-4 w-full justify-center items-center md:justify-start pt-4 md:pt-6">
                         <a href="#contact" rel="noreferrer">
                             <button
                                 type="button"
-                                className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-4 py-2 font-semibold animate-pulse"
+                                className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-2 py-2 font-semibold animate-pulse"
                             >
                                 Hire me
-                                <span className="sr-only">Hire me</span>
+                                <p className="sr-only">Hire me</p>
                             </button>
                         </a>
                         <a href="https://linkedin.com/in/andrempacheco97/" target="_blank" rel="noreferrer">

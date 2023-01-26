@@ -5,7 +5,7 @@ export default function About() {
     return (
         <section id="about" className="flex flex-col w-5/6 mx-auto pt-16 md:pt-24">
             <div
-                className="flex flex-col h-16 mb-8 justify-end items-start
+                className="flex flex-col h-16 mb-11 justify-end items-start
             md:h-20 md:mb-16"
             >
                 <motion.h1
@@ -28,7 +28,7 @@ export default function About() {
                     About me
                 </motion.h1>
             </div>
-            <div className="flex flex-col space-y-8 md:space-y-20">
+            <div className="flex flex-col space-y-14 md:space-y-20">
                 <div className="flex flex-col w-full space-y-6 select-text self-center
                 md:space-y-8
                 xl:w-10/12
@@ -133,7 +133,7 @@ export default function About() {
                     viewport={{
                         once: true
                     }}
-                    className="flex flex-col min-w-full space-y-6
+                    className="flex flex-col min-w-full space-y-10
                     md:hidden"
                 >
                     <p className="self-center text-white font-semibold">Technologies I have worked with:</p>
