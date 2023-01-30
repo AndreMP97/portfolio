@@ -46,7 +46,10 @@ export default function Projects() {
                     }}
                     className="flex flex-col min-w-full justify-center mt-3 md:mt-4
                     xl:flex-row xl:justify-start">
-                    <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer" className="flex flex-col order-1 xl:w-1/2 justify-start items-center">
+                    <a href="https://andremp97.github.io/weather-app/" target="_blank" rel="noreferrer" 
+                    className="flex flex-col order-1 justify-start items-center
+                    xl:w-5/12 xl:justify-center
+                    2xl:w-1/2">
                         <motion.img
                             initial={{
                                 y: -10,
@@ -70,7 +73,8 @@ export default function Projects() {
                     <div className="flex flex-col w-full order-2 justify-center space-y-4 select-text self-center
                     md:w-11/12 md:space-y-6
                     lg:w-9/12
-                    xl:w-1/2 xl:items-start xl:px-2 xl:pl-8">
+                    xl:w-7/12 xl:items-start xl:px-2 xl:pl-8
+                    2xl:w-1/2">
                         <motion.h3
                             initial={{
                                 y: -10,
@@ -187,7 +191,10 @@ export default function Projects() {
                     }}
                     className="flex flex-col min-w-full justify-center
                     xl:flex-row xl:justify-start">
-                    <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer" className="flex flex-col order-1 xl:order-2 xl:w-1/2 justify-start items-center">
+                    <a href="https://github.com/AndreMP97/PESTA" target="_blank" rel="noreferrer" 
+                    className="flex flex-col order-1 justify-start items-center
+                    xl:order-2 xl:w-5/12 xl:justify-center
+                    2xl:w-1/2">
                         <motion.img
                             initial={{
                                 y: -10,
@@ -210,7 +217,8 @@ export default function Projects() {
                     <div className="flex flex-col w-full order-1 justify-center space-y-4 select-text self-center
                     md:w-11/12 md:space-y-6
                     lg:w-9/12
-                    xl:w-1/2 xl:items-start xl:px-2 xl:pr-8">
+                    xl:w-7/12 xl:items-start xl:px-2 xl:pr-8
+                    2xl:w-1/2">
                         <motion.h3
                             initial={{
                                 y: -10,
