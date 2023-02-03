@@ -4,11 +4,13 @@ import About from "./components/about/";
 import Projects from "./components/projects/";
 import Contact from "./components/contact/";
 import Footer from "./components/footer";
+import { ScrollRestoration } from "react-router-dom";
 
 function App() {
   return (
     <div id="content" className="relative flex flex-col h-screen bg-gray-900
     overflow-y-scroll scroll-smooth scrollbar-thin lg:scrollbar scrollbar-thumb-gray-600 scrollbar-track-gray-500">
+      <ScrollRestoration />
       <header className="fixed flex h-20 md:h-28 w-full z-40">
         <Navbar />
       </header>

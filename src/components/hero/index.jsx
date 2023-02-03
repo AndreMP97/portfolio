@@ -2,6 +2,7 @@ import Picture from "../../assets/foto.jpg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function verifyHeight() {
     let viewportHeight = window.innerHeight;
@@ -109,7 +110,7 @@ export default function Hero() {
                             duration: 0.5
                         }}
                         className="inline-flex space-x-4 w-full justify-center items-center pt-4 md:pt-6 lg:justify-start">
-                        <a href="#contact" rel="noreferrer">
+                        <Link to="#contact" preventScrollReset={true}>
                             <button
                                 type="button"
                                 className="text-inherit bg-white hover:text-white hover:bg-gray-400 border border-transparent rounded-md px-2 py-2 font-semibold animate-pulse"
@@ -117,7 +118,7 @@ export default function Hero() {
                                 Hire me
                                 <p className="sr-only">Hire me</p>
                             </button>
-                        </a>
+                        </Link>
                         <a href="https://linkedin.com/in/andrempacheco97/" target="_blank" rel="noreferrer">
                             <FaLinkedin size={36} className="text-white hover:text-gray-400 border border-transparent" />
                             <span className="sr-only">LinkedIn</span>

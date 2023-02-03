@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon, UserIcon, HomeIcon, CubeIcon, InboxIcon, ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const navigation = [
     { name: "Home", href: "#home", current: false, icon: <HomeIcon className="block h-6 w-6 mr-1 md:h-4 md:w-4 lg:h-6 lg:w-6" /> },
@@ -29,9 +30,9 @@ export default function Navbar() {
                 className="flex w-5/6 justify-between"
             >
                 <div className="flex w-1/4" >
-                    <a href="#home" rel="noreferrer">
+                    <Link to="#home" preventScrollReset={true}>
                         <h2 className="self-center font-display text-white -rotate-12">AP</h2>
-                    </a>
+                    </Link>
                 </div>
 
                 {/*Desktop*/}
@@ -46,10 +47,10 @@ export default function Navbar() {
                                         "text-white hover:text-gray-400 cursor-pointer capitalize"
                                 }
                             >
-                                <a href={item.href} className="flex items-center">
+                                <Link to={item.href} preventScrollReset={true} className="flex items-center">
                                     {item.icon}
                                     {item.name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -77,10 +78,10 @@ export default function Navbar() {
                             <li key={item.name}
                                 className="text-white capitalize"
                             >
-                                <a href={item.href} onClick={() => setNav(!nav)} className="flex items-center">
+                                <Link to={item.href} preventScrollReset={true} onClick={() => setNav(!nav)} className="flex items-center">
                                     {item.icon}
                                     {item.name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                         <a href="https://drive.google.com/uc?export=download&id=1EDfXmMCBuh2VwYUhCVJdmFSGd-8FQpa_" rel="noreferrer">
