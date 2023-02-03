@@ -1,8 +1,8 @@
-import Navbar from "./components/navbar/";
-import Hero from "./components/hero/";
-import About from "./components/about/";
-import Projects from "./components/projects/";
-import Contact from "./components/contact/";
+import Navbar from "./components/navbar";
+import Hero from "./components/hero";
+import About from "./components/about";
+import Projects from "./components/projects";
+import Contact from "./components/contact";
 import Footer from "./components/footer";
 import { ScrollRestoration } from "react-router-dom";
 
@@ -21,8 +21,8 @@ function App() {
         <Contact />
       </main>
       <footer id="footer" className="container flex mx-auto z-40 justify-center bg-gray-800 items-center">
-          <Footer />
-        </footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
